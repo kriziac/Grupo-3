@@ -1,74 +1,27 @@
+/* style.css */
 body {
-  padding-top: 2rem;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
-
-/* Aqui empieza el codigo del css de los eventos */
-.container {
-  padding: 0 1rem;
-  max-width: 1200px;
-  display: flex;
-  justify-content: center;
+.banner {
+    width: 100%;
+    height: 100px; /* Ajusta la altura según tus necesidades */
+    background-image: linear-gradient(to right,#5168b2, #2ECC40);
+    background-size: 200% 100%;
+    animation: moveBanner 7s linear infinite;
+    white-space: nowrap;
 }
 
-#cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  border-color: black;
+@keyframes moveBanner {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
 }
-
-.card {
-  height: 400px;
-  width: 300px;
-  margin-bottom: 1rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.p1 {
+    text-decoration-color: red;
 }
-
-.fotos {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-}
-
-.card-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  flex-grow: 3; 
-}
-
-.card-title {
-  font-size: 2rem;
-  margin-bottom: 1px;
-}
-
-.card-btn {
-  margin-top: auto;
-}
-
-h1 {
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.btn {
-  background-color: purple;
-  color: white;
-  border-color: purple;
-}
-.card-text2 strong {
-  font-weight: bold; 
-  text-align: left; 
-  display: block;
-}
-
-/*Aquí termina el codigo de css de los eventos/*
-  
-  
-  
-  
