@@ -28,7 +28,7 @@ body {
 .p1 {
     text-decoration-color: red;
 }
-/* Aqui empieza el codigo del Banner */
+/* Aqui termina el codigo del Banner */
 
 
 
@@ -87,10 +87,19 @@ body {
   }
   
   .btn {
-    background-color: purple;
-    color: white;
-    border-color: purple;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 0.25rem;
+    text-align: center;
+    outline: 2px solid transparent;
+    color: rgba(128, 0, 128, var(--text-opacity)); /* Purple text */
+    border: 2px solid purple; /* Purple border */
+    background-color: transparent; /* Transparent background */
   }
+  .btn:hover{
+    background-color:purple;
+  }
+
   .card-text2 strong {
     font-weight: bold; 
     text-align: left; 
