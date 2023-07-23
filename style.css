@@ -1,6 +1,4 @@
 
-
-
 /* Aqui empieza el codigo del Banner */
 body {
     margin: 0;
@@ -29,6 +27,15 @@ body {
     text-decoration-color: red;
 }
 /* Aqui termina el codigo del Banner */
+
+
+
+
+
+/* Aqui empieza el codigo de los beneficios-premios */
+
+/* Aqui termina el codigo de los beneficios-premios */
+
 
 
 
@@ -108,3 +115,19 @@ body {
   
   /*Aquí termina el codigo de css de los eventos/*
     
+
+
+
+
+  /* Aqui empieza el codigo del About Us */
+  .containerTextAboutUs{
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: larger;
+  }
+  .containerAboutUs{
+    background-color: #FACC2F;
+    padding: 5%;
+  }
+  /* Aqui termina el codigo del About Us */
