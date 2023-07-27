@@ -1,3 +1,9 @@
+/* Paleta de colores:
+#FACC2F
+#322BAA
+#712C96
+*/
+
 
 /* Aqui empieza el codigo del Banner */
 body {
@@ -8,12 +14,22 @@ body {
 
 .banner {
     width: 100%;
-    height: 100px; /* Ajusta la altura según tus necesidades */
-    background-image: linear-gradient(to right,#5168b2, #2ECC40);
+    height: 50px; /* Ajusta la altura según tus necesidades */
+    background-image: linear-gradient(to right,#FACC2F, #712C96);
     background-size: 200% 100%;
     animation: moveBanner 7s linear infinite;
     white-space: nowrap;
 }
+
+.banner-texto {
+    position: absolute;
+    top: 50%; /* Ajusta la posición vertical del texto */
+    left: 50%; /* Ajusta la posición horizontal del texto */
+    transform: translate(-50%, -50%); /* Centra el texto dentro del banner */
+    font-size: 24px; /* Tamaño del texto */
+    color: #ffffff; /* Color del texto */
+}
+
 
 @keyframes moveBanner {
     0% {
@@ -28,7 +44,12 @@ body {
 }
 /* Aqui termina el codigo del Banner */
 
-
+/*Contenido de la imagen principal de la página*/
+.imagen-principal {
+    width: 2400px;
+    height: 100%;
+    object-fit: cover;
+}
 
 
 
