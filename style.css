@@ -15,7 +15,7 @@ body {
 .banner {
     width: 100%;
     height: 50px; /* Ajusta la altura según tus necesidades */
-    background-image: linear-gradient(to right,#FACC2F, #712C96);
+    background-image: linear-gradient(to right,#FACC2F, #FACC3F);
     background-size: 200% 100%;
     animation: moveBanner 7s linear infinite;
     white-space: nowrap;
@@ -62,6 +62,10 @@ body {
 
 
 /* Aqui empieza el codigo del css de los eventos */
+.h1Eventos{
+  font-family: 'League Gothic';
+}
+
 .container {
     padding: 0 1rem;
     max-width: 1200px;
@@ -150,5 +154,8 @@ body {
   .containerAboutUs{
     background-color: #FACC2F;
     padding: 5%;
+  }
+  .h1AboutUS{
+   font-family: 'League Gothic';
   }
   /* Aqui termina el codigo del About Us */
