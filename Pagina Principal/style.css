@@ -4,32 +4,23 @@
 #712C96
 */
 
-
-/* Aqui empieza el codigo del Banner */
 body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
 }
 
+
+/* Aqui empieza el codigo del Banner */
+
 .banner {
     width: 100%;
     height: 50px; /* Ajusta la altura según tus necesidades */
-    background-image: linear-gradient(to right,#FACC2F, #FACC3F);
+    background-image: linear-gradient(to right,#FACC2F, #6e6c66);
     background-size: 200% 100%;
     animation: moveBanner 7s linear infinite;
     white-space: nowrap;
 }
-
-.banner-texto {
-    position: absolute;
-    top: 50%; /* Ajusta la posición vertical del texto */
-    left: 50%; /* Ajusta la posición horizontal del texto */
-    transform: translate(-50%, -50%); /* Centra el texto dentro del banner */
-    font-size: 24px; /* Tamaño del texto */
-    color: #ffffff; /* Color del texto */
-}
-
 
 @keyframes moveBanner {
     0% {
@@ -63,7 +54,8 @@ body {
 
 /* Aqui empieza el codigo del css de los eventos */
 .h1Eventos{
-  font-family: 'League Gothic';
+  font-family: 'Comfortaa';
+  text-align: center;
 }
 
 .container {
@@ -137,6 +129,13 @@ body {
     text-align: left; 
     display: block;
   }
+  
+  .linea{
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      border: 0;
+      border-top: 10px solid rgb(0, 0, 0);
+    }
   
   /*Aquí termina el codigo de css de los eventos/*
     
