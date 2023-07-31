@@ -1,7 +1,7 @@
 /* Paleta de colores:
-#FACC2F
-#322BAA
-#712C96
+#FACC2F Amarillo
+#322BAA Azul
+#712C96 Morado
 */
 
 body {
@@ -53,32 +53,31 @@ body {
 
 
 /* Aqui empieza el codigo del css de los eventos */
+
+.containerRecomendaciones{
+  padding: 3%;
+  flex-wrap: wrap;
+}
+
 .h1Eventos{
-  font-family: 'Comfortaa';
+  font-family: 'Lilita One';
   text-align: center;
+  font-size: 5rem;
 }
 
 .container {
-    padding: 0 1rem;
-    max-width: 1200px;
+    padding: 1rem;
+    max-width: 1400px;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
   
-  #cards-container {
+  .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     border-color: black;
-  }
-  
-  .card {
-    height: 400px;
-    width: 300px;
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
   
   .fotos {
@@ -100,10 +99,7 @@ body {
     margin-bottom: 1px;
   }
   
-  .card-btn {
-    margin-top: auto;
-  }
-  
+
   h1 {
     font-size: 3rem;
     text-align: center;
@@ -112,16 +108,19 @@ body {
   
   .btn {
     cursor: pointer;
-    display: inline-block;
+    display:block;
     border-radius: 0.25rem;
     text-align: center;
     outline: 2px solid transparent;
-    color: rgba(128, 0, 128, var(--text-opacity)); /* Purple text */
-    border: 2px solid purple; /* Purple border */
-    background-color: transparent; /* Transparent background */
+    color: rgba(128, 0, 128, var(--text-opacity)); 
+    border: 2px solid purple;
+    background-color: transparent; 
+    width: 100%;
+    
   }
   .btn:hover{
     background-color:purple;
+    border-color: #712C96;
   }
 
   .card-text2 strong {
@@ -129,14 +128,11 @@ body {
     text-align: left; 
     display: block;
   }
-  
-  .linea{
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      border: 0;
-      border-top: 10px solid rgb(0, 0, 0);
-    }
-  
+  .col-lg-4 {
+   border: #712C96 solid 1px;
+   border-radius: 10px;
+  }
+ 
   /*Aquí termina el codigo de css de los eventos/*
     
 
@@ -149,12 +145,13 @@ body {
     padding-left: 10%;
     padding-right: 10%;
     font-size: larger;
+  
   }
   .containerAboutUs{
     background-color: #FACC2F;
-    padding: 5%;
+    padding: 3%;
   }
   .h1AboutUS{
-   font-family: 'League Gothic';
+   font-family: 'Lilita One';
   }
   /* Aqui termina el codigo del About Us */

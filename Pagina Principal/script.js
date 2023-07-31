@@ -1,8 +1,4 @@
 document.addEventListener('DOMContentLoaded', async function () {
-  
-  
-  
-  /*Aqui empieza el codigo de script de los eventos */
   try {
     const response = await fetch('data.json');
     const jsonData = await response.json();
@@ -15,7 +11,7 @@ document.addEventListener('DOMContentLoaded', async function () {
           <p class="card-text">${evento.description}</p>
           <p class="card-text"><strong>Ubicación:</strong> ${evento.location}</p>
           <p class="card-text"><strong>Horario:</strong> ${evento.date}</p>
-          <button class="btn btn-primary" onclick="redirectToURL('${evento.url}')">Más Información</button>
+          <a href="${evento.url}" class="btn btn-primary">Más Información</a>
         </div>
       `;
 
@@ -29,9 +25,6 @@ document.addEventListener('DOMContentLoaded', async function () {
   }
 });
 
-function redirectToURL(url) {
-  window.location.href = url;
-}
 
 /*Aqui termina el codigo de script de los eventos */
   
