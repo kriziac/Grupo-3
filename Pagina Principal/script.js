@@ -5,12 +5,12 @@ document.addEventListener('DOMContentLoaded', async function () {
 
     jsonData.forEach((evento) => {
       const cardContentHTML = `
-        <img src="${evento.img}" class="fotos" alt="${evento.name}">
-        <div class="card-body">
-          <h5 class="card-title">${evento.name}</h5>
-          <p class="card-text">${evento.description}</p>
-          <p class="card-text"><strong>Ubicación:</strong> ${evento.location}</p>
-          <p class="card-text"><strong>Horario:</strong> ${evento.date}</p>
+        <img src="${evento.img}" class="evento-fotos" alt="${evento.name}">
+        <div class="evento-card-body">
+          <h5 class="evento-card-title">${evento.name}</h5>
+          <p class="evento-card-text">${evento.description}</p>
+          <p class="evento-card-text"><strong>Ubicación:</strong> ${evento.location}</p>
+          <p class="evento-card-text"><strong>Horario:</strong> ${evento.date}</p>
           <a href="${evento.url}" class="btn btn-primary">Más Información</a>
         </div>
       `;
@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', async function () {
       const card = document.createElement('div');
       card.className = 'col-lg-4 col-md-6 col-12';
       card.innerHTML = cardContentHTML;
-      document.getElementById('cards-container').appendChild(card);
+      document.getElementById('eventos-cards-container').appendChild(card);
     });
   } catch (error) {
     console.log('Error al cargar el JSON:', error);
@@ -27,4 +27,3 @@ document.addEventListener('DOMContentLoaded', async function () {
 
 
 /*Aqui termina el codigo de script de los eventos */
-  

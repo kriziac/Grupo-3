@@ -16,7 +16,7 @@ body {
 .banner {
     width: 100%;
     height: 50px; /* Ajusta la altura según tus necesidades */
-    background-image: linear-gradient(to right,#FACC2F, #6e6c66);
+    background-image: linear-gradient(to right,#FACC2F, #ffc415);
     background-size: 200% 100%;
     animation: moveBanner 7s linear infinite;
     white-space: nowrap;
@@ -30,22 +30,55 @@ body {
         background-position: 200% 0;
     }
 }
-.p1 {
-    text-decoration-color: red;
-}
+
 /* Aqui termina el codigo del Banner */
 
 /*Contenido de la imagen principal de la página*/
-.imagen-principal {
-    width: 2400px;
-    height: 100%;
-    object-fit: cover;
+.containerPrincipal{
+  width: 100%;
+  height: 90vh;
+ background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(Imagenes/artwork.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 5%;
+}
+
+.texto-principal{
+  position: absolute;
+  top:10%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.texto-principal h1{
+  font-size: 100px;
+  font-weight: 1000;
+  font-family: Roboto;
+  color: #FACC2F;
+}
+
+.btn{
+  cursor: pointer;
+  display:flex;
+  border-radius: 0.25rem;
+  text-align: center;
+  outline: 2px solid transparent;
+  color: rgba(128, 0, 128, var(--text-opacity)); 
+  border: 2px solid #322BAA;
+  background-color:#322BAA; 
+  width: 50%;
+  height: 40px;
+  font-size: x-large;
+  font-weight: 600;
+  justify-content: center;
+
 }
 
 
 
 /* Aqui empieza el codigo de los beneficios-premios */
-
 /* Aqui termina el codigo de los beneficios-premios */
 
 
@@ -54,23 +87,23 @@ body {
 
 /* Aqui empieza el codigo del css de los eventos */
 
-.containerRecomendaciones{
+.containerEventos{
   padding: 3%;
   flex-wrap: wrap;
 }
 
 .h1Eventos{
-  font-family: 'Lilita One';
+  font-family: Roboto;
   text-align: center;
   font-size: 5rem;
 }
 
-.container {
-    padding: 1rem;
+.eventos-cards-container{
+    padding: 2rem;
     max-width: 1400px;
-    display: flex;
+    display: grid;
     justify-content: center;
-    align-items: center;
+    place-content: center;
   }
   
   .row {
@@ -80,23 +113,24 @@ body {
     border-color: black;
   }
   
-  .fotos {
+  .evento-fotos {
     width: 100%;
     height: 200px;
     object-fit: cover;
   }
   
-  .card-body {
+  .evento-card-body {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     padding: 1rem;
     flex-grow: 3; 
   }
   
-  .card-title {
+  .evento-card-title {
     font-size: 2rem;
     margin-bottom: 1px;
+    align-items: center;
   }
   
 
@@ -116,7 +150,7 @@ body {
     border: 2px solid purple;
     background-color: transparent; 
     width: 100%;
-    
+   
   }
   .btn:hover{
     background-color:purple;
@@ -131,6 +165,10 @@ body {
   .col-lg-4 {
    border: #712C96 solid 1px;
    border-radius: 10px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   bottom: 0%;
   }
  
   /*Aquí termina el codigo de css de los eventos/*
@@ -152,6 +190,6 @@ body {
     padding: 3%;
   }
   .h1AboutUS{
-   font-family: 'Lilita One';
+   font-family: roboto;
   }
   /* Aqui termina el codigo del About Us */
