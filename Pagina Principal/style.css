@@ -14,21 +14,37 @@ body {
 /* Aqui empieza el codigo del Banner */
 
 .banner {
-    width: 100%;
-    height: 50px; /* Ajusta la altura según tus necesidades */
-    background-image: linear-gradient(to right,#FACC2F, #ffc415);
-    background-size: 200% 100%;
-    animation: moveBanner 7s linear infinite;
-    white-space: nowrap;
+  display: flex; /* Agregamos flexbox para alinear los elementos */
+  align-items: center; /* Centramos verticalmente los elementos en el banner */
+  width: 100%;
+  height: 100px; /* Ajusta la altura según tus necesidades */
+  background-image: linear-gradient(to right, #FFA500, #FFFF00);
+  background-size: 200% 100%;
+  animation: moveBanner 15s linear infinite;
+  white-space: nowrap;
 }
 
 @keyframes moveBanner {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 200% 0;
-    }
+  0% {
+      background-position: 0 0;
+  }
+  100% {
+      background-position: 200% 0;
+  }
+}
+
+.countdown-wrapper {
+  flex: 1; /* Para que ocupe todo el espacio disponible en el banner */
+  text-align: center;
+  color: white;
+}
+
+.countdown {
+  font-size: 18px;
+}
+
+#countdown-timer {
+  font-size: 24px;
 }
 
 /* Aqui termina el codigo del Banner */
