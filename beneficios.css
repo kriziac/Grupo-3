@@ -1,0 +1,201 @@
+body {
+    color: #333333;
+    font-family: Arial, Helvetica, serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  h1 {
+    background: #ed6d1c;
+    color: #fff;
+    text-align: center;
+    margin: 0 0 5% 0;
+    padding: 0.5em;
+    margin: 0 0 5% 0;
+  }
+  
+  h3 {
+    
+    color: #fff;
+    text-align: center;
+    margin: 0 0 5% 0;
+    padding: 0.5em;
+    margin: 0 0 5% 0;
+    
+  }
+
+    .cardBox {
+    float: left;
+    font-size: 1.2em;
+    margin: 1% 0 0 1%;
+    perspective: 800px;
+    transition: all 0.3s ease 0s;
+    width: 23.7%;
+  }
+  /*hace girar las cards*/
+  .cardBox:hover .card {
+    transform: rotateY( 180deg);
+  }
+
+  
+
+
+
+  .card {
+    background: #e4b21c;
+    cursor: default;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease 0s;
+    width: 100%;
+    -webkit-animation: giro 1s 1;
+    animation: giro 1s 1;
+  }
+  
+  .card p {
+    margin-bottom: 1.8em;
+  }
+  
+  .card .front,
+  .card .back {
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    color: white;
+    display: block;
+    font-size: 1.2em;
+    height: 100%;
+    padding: 0.8em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .card .front strong {
+    background: #fff;
+    border-radius: 100%;
+    color: #222;
+    font-size: 1.5em;
+    line-height: 30px;
+    padding: 0 7px 4px 6px;
+  }
+  
+  .card .back {
+    transform: rotateY( 180deg);
+  }
+  
+  .card .back a {
+    padding: 0.3em 0.5em;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 1px;
+    font-size: 0.9em;
+    transition: all 0.2s ease 0s;
+  }
+  
+  .card .back a:hover {
+    background: #fff;
+    color: #333;
+    text-shadow: 0 0 1px #333;
+  }
+  
+  .cardBox:nth-child(1) .card .back {
+    background: rgb(97, 216, 192);
+  }
+  
+  .cardBox:nth-child(2) .card .back {
+    background: orange;
+  }
+  
+  .cardBox:nth-child(3) .card .back {
+    background: yellowgreen;
+  }
+  
+  .cardBox:nth-child(4) .card .back {
+    background: tomato;
+  }
+  
+  .cardBox:nth-child(2) .card {
+    -webkit-animation: giro 1.5s 1;
+    animation: giro 1.5s 1;
+  }
+  
+  .cardBox:nth-child(3) .card {
+    -webkit-animation: giro 2s 1;
+    animation: giro 2s 1;
+  }
+  
+  .cardBox:nth-child(4) .card {
+    -webkit-animation: giro 2.5s 1;
+    animation: giro 2.5s 1;
+}
+
+@-webkit-keyframes giro {
+  from {
+    transform: rotateY( 180deg);
+  }
+  to {
+    transform: rotateY( 0deg);
+  }
+}
+
+@keyframes giro {
+  from {
+    transform: rotateY( 180deg);
+  }
+  to {
+    transform: rotateY( 0deg);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cardBox {
+    margin-left: 2.8%;
+    margin-top: 3%;
+    width: 46%;
+  }
+  .card {
+    height: 285px;
+  }
+  .cardBox:last-child {
+    margin-bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cardBox {
+    width: 94.5%;
+  }
+  .card {
+    height: 260px;
+  }
+
+  /* Estilo para la tarjeta de información */
+  .info-card {
+    display: none;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Estilo para el botón */
+  .show-info-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+
+
+  
+} 
+    
