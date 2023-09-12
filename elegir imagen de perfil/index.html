@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+  <title>Preview de Imagen</title>
+</head>
+<body>
+  <main>
+    <h1>Editar perfil</h1>
+    <form method="post" action="#" enctype="multipart/form-data">
+      <div>
+        <img src="https://stonegatesl.com/wp-content/uploads/2021/01/avatar-300x300.jpg" alt="avatar" id="img" />
+        <input type="file" name="foto" id="foto" accept="image/*" />
+        <label for="foto">Cambiar foto</label>
+      </div>
+      <div>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" autocomplete="off" />
+      </div>
+      <div>
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" autocomplete="off" />
+      </div>
+
+      <div>
+        <button type="submit">Guardar cambios</button>
+      </div>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

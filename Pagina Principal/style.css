@@ -5,9 +5,12 @@
 */
 
 body {
-    margin: 0;
-    padding: 0;
     overflow-x: hidden;
+    color: #333333;
+    font-family: Arial, Helvetica, serif;
+    font-weight: normal;
+    margin: 0%;
+    padding: 0%;
 }
 
 
@@ -53,7 +56,7 @@ body {
 .containerPrincipal{
   width: 100%;
   height: 90vh;
- background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(Imagenes/artwork.png);
+  background-image: linear-gradient(rgba(0,0,0,0.3),transparent),url(Imagenes/artwork.png);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -75,7 +78,7 @@ body {
   color: #FACC2F;
 }
 
-.btn{
+.btn-participa{
   cursor: pointer;
   display:flex;
   border-radius: 0.25rem;
@@ -196,8 +199,8 @@ body {
   /* Aqui empieza el codigo del About Us */
   .containerTextAboutUs{
     text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     font-size: larger;
   
   }
@@ -206,6 +209,8 @@ body {
     padding: 3%;
   }
   .h1AboutUS{
-   font-family: roboto;
+    font-family: roboto;
+    margin: 25% 0% 3% 0;
+    padding: 0%;
   }
   /* Aqui termina el codigo del About Us */

@@ -1,28 +1,22 @@
-body {
-    color: #333333;
-    font-family: Arial, Helvetica, serif;
-    font-weight: normal;
-    margin: 0;
-    padding: 0;
-    
-  }
+
   
-  h1 {
+  .h1benef {
     background: #ed6d1c;
-    color: #fff;
+    color: black;
     text-align: center;
-    margin: 0 0 5% 0;
-    padding: 0.5em;
-    margin: 0 0 5% 0;
+    margin: 0 0 0% 0;
+    padding: 2%;
+    font-family: roboto;
   }
   
   h3 {
     
     color: #fff;
     text-align: center;
-    margin: 0 0 5% 0;
+    margin: 3% 0 0% 0;
     padding: 0.5em;
-    margin: 0 0 5% 0;
+    
+    
     
   }
 
@@ -44,7 +38,7 @@ body {
 
 
   .card {
-    background: #e4b21c;
+    background: #322BAA;
     cursor: default;
     height: 300px;
     transform-style: preserve-3d;
@@ -52,6 +46,7 @@ body {
     width: 100%;
     -webkit-animation: giro 1s 1;
     animation: giro 1s 1;
+    
   }
   
   .card p {
@@ -102,7 +97,7 @@ body {
   }
   
   .cardBox:nth-child(1) .card .back {
-    background: rgb(97, 216, 192);
+    background: rgb(26, 144, 199);
   }
   
   .cardBox:nth-child(2) .card .back {
@@ -171,31 +166,43 @@ body {
   .card {
     height: 260px;
   }
+}
 
   /* Estilo para la tarjeta de información */
-  .info-card {
-    display: none;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: 300px;
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+.info-card1 {
+  display: none;
+  background-color: #777575;
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 950px;
+  position:relative;
+  top: 80px;
+  left: 70%;
+  transform:translate(-20%);
+}
+
+.info-card2 {
+  display: none;
+  background-color: #777575;
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 950px;
+  position:relative;
+  top: 80px;
+  right: 70%;
+  transform:translate(-50%);
+}
+
+/* Estilo para el botón */
+.show-info-button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 20px 40px;
+  cursor: pointer;
+}
+
+
   
-  /* Estilo para el botón */
-  .show-info-button {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
 
-
-
-  
-} 
     
