@@ -1,399 +1,178 @@
-<<<<<<< Updated upstream
 <!DOCTYPE html>
 <html>
 <head>
-  <title> Grupo 3</title>
+    <meta charset="UTF-8">
+    <title>Grupo 3</title>
 
-  <!--Bootstrap-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- CSS -->
-  <link href="style.css" rel="stylesheet">
-  <!--fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Carter+One&family=Lilita+One&family=Passion+One:wght@700&family=Roboto:wght@900&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="beneficios.css">
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
-
-
+    <!-- Enlaces a recursos externos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500;1,800&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <script src="script.js"></script>
 </head>
 <body>
+    <!-- HEADER - NAVBAR -->
+    <header id="navegacion">
+        <nav class="navbar navbar-white bg-white navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a href="#"><img src="./Imagenes/Logo.png" alt="logo"></a>
 
+                <!-- Icono Menu -->
+                <button class="navbar-toggler" id="buttonresponsive" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
- <!-- Contenido del banner -->
- <div class="banner">
-  <div class="countdown-wrapper">
-      <div class="countdown">
-          <h2 id="countdown-text">Estás en la cuenta atrás, ¡anímate!</h2>
-          <div id="countdown-timer"></div>
-      </div>
-  </div>
-</div>
-<script src="banner.js"></script>
- <!-- Termina contenido del banner -->
-   
+                <!-- Menú de navegación -->
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav me-auto">
+                        <li class="navbar-item">
+                            <a href="#about-us" class="nav-link active">Acerca de nosotros</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#patrocinadores" class="nav-link">Patrocinantes</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#" class="nav-link">Premios</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
 
-
-<!-- Contenido de la imagen principal de la página-->
-<div class ="containerPrincipal">
-
-  <div class="texto-principal">
-
-    <h1>Concurso de <br>fotografía <br> creativa!</h1>
-  
-    <button class="btn-participa">Participa!</button>
-
-  </div>
-  </div>
-</div>
-<!-- Termina contenido de la imagen principal de la página-->
-
-
-
- <!-- Aqui empieza el codigo de los Eventos/Recomendaciones-->
-<div class="containerEventos">
-
-<h1 class="h1Eventos"> Eventos</h1>
-
-  <div class="row" id="eventos-cards-container">
-  </div>
-</div>
-</div>
-<!-- Aqui termina el codigo de los Recomendaciones-->
-
-
-<!-- Aqui empieza el codigo de los premios-->
-<div class="beneficios">
-<h1 class="h1benef">¡Únete a nuestro emocionante concurso de fotografía y sus beneficios!</h1>
-
-  <div class="boxesContainer">
-
-    <div class="cardBox">
-      <div class="card">
-        <div class="front">
-          <h3>Exhibición Épica y Aventura Creativa: </h3>
-        </div>
-        <div class="back">
-          <h3> ¿Eres un joven aventurero fotógrafo?</h3>
-            <button class="show-info-button" onclick="mostrarInfo1()">Leer más ...</button>
-            <div class="info-card1" id="infoCard1">
-              <h3>Exhibición Épica y Aventura Creativa:</h3>
-              <p>Exhibición Épica y Aventura Creativa: ¿Eres un joven aventurero fotógrafo? Tienes
-                la emocionante oportunidad de mostrar tu talento y creatividad en una exhibición épica. Cada
-                participación en el concurso representa el primer paso en una aventura creativa que te lleva a explorar
-                mundos visuales desconocidos. Tus fotos se convierten en mapas que guían a los espectadores a través de
-                tus experiencias y te permiten compartir tus aventuras visuales con personas de todo el mundo.</p>
+                    <!-- Botones de inicio de sesión -->
+                    <ul class="navbar-nav flex-row flex-wrap text-light" id="sesion">
+                        <li class="navbar-item col-6 col-md-auto p-3">
+                            <button id="loginBtn" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                <i class="bi bi-person-fill-lock"></i>
+                            </button>
+                            <small class="d-md-none ms-2">Iniciar Sesión</small>
+                        </li>
+                        <li class="navbar-item col-6 col-md-auto p-3">
+                            <button type="button" class="btn btn-dark">
+                                <i class="bi bi-box-arrow-in-right"></i>
+                            </button>
+                            <small class="d-md-none ms-2">Cerrar Sesión</small>
+                        </li>             
+                    </ul>
+                </div>
             </div>
-        </div>
-      </div>
-    </div>
+        </nav>
+    </header>
 
-    <div class="cardBox">
-      <div class="card">
-        <div class="front">
-          <h3>Premios Inimaginables:</h3>
-        </div>
-        <div class="back">
-          <h3>Prepárate <br>para ser <br>sorprendido</h3>
-          <button class="show-info-button" onclick="mostrarInfo2()">Leer más ...</button>
-          <div class="info-card1" id="infoCard2">
-            <h3>Premios Inimaginables:</h3>
-            <p>Premios Inimaginables: Prepárate para ser sorprendido por premios inimaginables que te llevan a vivir
-              aventuras reales. Desde emocionantes viajes a lugares exóticos hasta equipos fotográficos de vanguardia
-              que te permiten conquistar nuevos desafíos visuales, estos premios no solo reconocen tu habilidad, sino
-              que también te abren la puerta a nuevas experiencias y aventuras que solo la fotografía puede ofrecer.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="cardBox">
-      <div class="card">
-        <div class="front">
-          <h3>Mentoría de Expertos y Reconocimiento en el Mundo de la Fotografía:</h3>
-        </div>
-        <div class="back">
-          <h3> Imagina recibir orientación y consejos de maestros</h3>
-          <button class="show-info-button" onclick="mostrarInfo3()">Leer más ...</button>
-          <div class="info-card2" id="infoCard3">
-            <h3>Mentoría de Expertos y Reconocimiento en el Mundo de la Fotografía:</h3>
-            <p>Mentoría de Expertos y Reconocimiento en el Mundo de la Fotografía: Imagina recibir orientación y
-              consejos de maestros de la fotografía que te llevan a nuevos niveles de habilidad y creatividad. Además,
-              al participar, tu nombre se une a los aventureros visuales reconocidos en el mundo de la fotografía,
-              brindándote la oportunidad de ser parte de una comunidad de artistas que comparten la pasión por la
-              aventura fotográfica. Aquí, cada foto es una historia que te define como un auténtico aventurero visual.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="cardBox">
-      <div class="card">
-        <div class="front">
-          <h3>Emocionantes Desafíos Temáticos:</h3>
-        </div>
-        <div class="back">
-          <h3>¡Es como embarcarse en una aventura creativa! </h3>
-          <button class="show-info-button" onclick="mostrarInfo4()">Leer más ...</button>
-          <div class="info-card2" id="infoCard4">
-            <h3>Emocionantes Desafíos Temáticos:</h3>
-            <p>El concurso presenta una emocionante variedad de desafíos temáticos en cada edición. ¡Es como embarcarse
-              en una aventura creativa! Desde paisajes impresionantes hasta retratos emocionales y fotografía urbana
-              vibrante, cada tema es una nueva aventura fotográfica que te permite explorar y capturar el mundo desde
-              ángulos únicos y emocionantes. Si eres joven y apasionado por la aventura, estos desafíos te llevan a
-              lugares inexplorados de la fotografía y te inspiran a expresar tu creatividad de maneras sorprendentes.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-<script src="beneficios.js"></script>
-</div>
-<!-- Aqui termina el codigo de los premios-->
-
-<!-- Aqui empieza el codigo del About Us -->
-
-<div class="containerAboutUs">
-  
-  <h1 class="h1AboutUS">Acerca de nosotros</h1>
-<div class="containerTextAboutUs">
-  <p> Desde la majestuosidad de la Sagrada Familia hasta las vibrantes calles del Barrio Gótico, 
-    desde la esencia de la cocina mediterránea hasta la emoción del fútbol en el Camp Nou, 
-    nuestro proyecto te sumergirá en una aventura educativa como ninguna otra. 
-    <br><br>
-    Queremos empoderar a los adolescentes para que se conviertan en embajadores de la cultura, 
-    agentes del cambio y líderes del mañana.
-    <br><br>
-    Únete a nosotros y sé parte de una comunidad de mentes curiosas y corazones apasionados que 
-    buscan desafiar los límites de la educación tradicional y abrazar una nueva era de aprendizaje 
-    colaborativo y enriquecedor. 
-    <br><br>
-    Juntos, vamos a difundir la viralización cultural, romper barreras y construir puentes de 
-    entendimiento entre generaciones y culturas.
-  </p>
-  </div>
-</div>
-</div>
-<!-- Aqui termina el codigo del About Us-->
-
-
-
-
-
-
-
-
-=======
-<!DOCTYPE html>
-<html>
-<head>
-  <title> Grupo 3</title>
-
-  <!--Bootstrap-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- CSS -->
-  <link href="style.css" rel="stylesheet">
-  <!--fonts-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500;1,800&family=Roboto:wght@900&display=swap" rel="stylesheet">
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-<script src="script.js"></script>
-
-</head>
-<body>
-<!-- HEADER - NAVBAR -->
-<header id="navegacion">
-    <nav class="navbar navbar-white bg-white navbar-expand-lg">
-        <div class="container-fluid">
-            <!-- Logo -->
-            <a href="#"><img src="./Imagenes/Logo.png" alt="logo"></a>
-
-            <!-- Icono Menu -->
-            <button class="navbar-toggler" id="buttonresponsive" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Menu -->
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav me-auto">
-                    <li class="navbar-item">
-                      <a href="#about-us" class="nav-link active">Acerca de nosotros</a>
-
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#patrocinadores" class="nav-link">Patrocinantes</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#" class="nav-link">Premios</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#" class="nav-link">Contacto</a>
-                    </li>
-                  </ul>
-                  
-                <!-- Boton de Inicio de sesion -->
-                <ul class="navbar-nav flex-row flex-wrap text-light" id="sesion">
-                    <li class="navbar-item col-6 col-md-auto p-3">
-                        <button id="loginBtn" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#loginModal">
-                            <i class="bi bi-person-fill-lock"></i>
-                        </button>
-                        <small class="d-md-none ms-2">Iniciar Sesión</small>
-                    </li>
-                    <li class="navbar-item col-6 col-md-auto p-3">
-                        <button type="button" class="btn btn-dark">
-                            <i class="bi bi-box-arrow-in-right"></i>
-                        </button>
-                        <small class="d-md-none ms-2">Cerrar Sesión</small>
-                    </li>             
-                </ul>
-        </div>
-    </nav>
-</header>
-     <!-- MODAL LOGIN -->
-
-    <!-- Modal -->
-
-        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+    <!-- Modal de inicio de sesión -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                <h1 class="modal-title fs-5" id="loginModalLabel">INICIAR SESION</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-5" id="loginModalLabel">INICIAR SESIÓN</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                
+                    <!-- Formulario de inicio de sesión -->
                     <form method="post">
                         <div class="formulario">
-                          <label for="inputUsername" class="col-form-label">Usuario</label>
-                          <div class="">
-                            <input type="text" class="form-control" id="autoSizingInputGroup" required>
-                          </div>
+                            <label for="inputUsername" class="col-form-label">Usuario</label>
+                            <div class="">
+                                <input type="text" class="form-control" id="autoSizingInputGroup" required>
+                            </div>
                         </div>
                         <div class="formulario">
-                          <label for="inputPassword3" class="col-form-label">Contraseña</label>
-                          <div class="">
-                            <input type="password" class="form-control" id="inputPassword3" required>
-                          </div>
+                            <label for="inputPassword3" class="col-form-label">Contraseña</label>
+                            <div class="">
+                                <input type="password" class="form-control" id="inputPassword3" required>
+                            </div>
                         </div>
-              
                         <div class="pass">
-                          ¿Olvidastes tu contraseña?
+                            ¿Olvidaste tu contraseña?
                         </div>
                         <button type="submit" id="btn-login" class="btn btn-primary">Inicio de Sesión</button>
-                      </form>
+                    </form>
+                    <!-- Fin del formulario de inicio de sesión -->
                 </div>
             </div>
+        </div>
+    </div>
+    
+    <!-- Contenido del banner -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="banner">
+        <div class="countdown-wrapper">
+            <div class="countdown">
+                <h2 id="countdown-text">Estás en la cuenta atrás, ¡anímate!</h2>
+                <div id="countdown-timer"></div>
             </div>
         </div>
-
- <!-- Contenido del banner -->
- <br>
- <br>
- <br>
- <br>
- <div class="banner">
-  <div class="countdown-wrapper">
-      <div class="countdown">
-          <h2 id="countdown-text">Estás en la cuenta atrás, ¡anímate!</h2>
-          <div id="countdown-timer"></div>
-      </div>
-  </div>
-</div>
-<script src="banner.js"></script>
- <!-- Contenido del banner -->
-   
-<!-- Contenido de la imagen principal de la página-->
-<div class ="containerPrincipal">
-
-  <div class="texto-principal">
-    <h1>Concurso de <br>fotografía <br> creativa!</h1>
-    <button id="participa-btn" class="btn-participa">Participa!</button>
-  </div>
-  </div>
-</div>
-<!-- Contenido de la imagen principal de la página-->
-
-<!-- Aqui empieza el codigo de los patrocinadores-->
-<div id="patrocinadores" class="containerPatrocinadores">
-  <h1 class="h1Patrocinadores">Patrocinadores</h1>
-  <div class="row" id="patrocinadores-cards-container">
-  </div>
-</div>
-<!-- Aqui termina el codigo de los patrocinadores-->
-
- <!-- Aqui empieza el codigo de los Eventos/Recomendaciones-->
-<div class="containerEventos">
-
-  <h1 class="h1Eventos">Eventos</h1>
-
-
-  <div class="row" id="eventos-cards-container">
-  </div>
-</div>
-</div>
-
-<!-- Aqui termina el codigo de los Recomendaciones-->
-
-
-
-<!-- Aqui empieza el codigo del About Us -->
-<div id="about-us" class="containerAboutUs">
-  <h1 class="h1AboutUS"> Acerca de nosotros </h1>
-<div class="containerTextAboutUs">
-  <p> Desde la majestuosidad de la Sagrada Familia hasta las vibrantes calles del Barrio Gótico, 
-    desde la esencia de la cocina mediterránea hasta la emoción del fútbol en el Camp Nou, 
-    nuestro proyecto te sumergirá en una aventura educativa como ninguna otra. 
-    <br><br>
-    Queremos empoderar a los adolescentes para que se conviertan en embajadores de la cultura, 
-    agentes del cambio y líderes del mañana.
-    <br><br>
-    Únete a nosotros y sé parte de una comunidad de mentes curiosas y corazones apasionados que 
-    buscan desafiar los límites de la educación tradicional y abrazar una nueva era de aprendizaje 
-    colaborativo y enriquecedor. 
-  <br><br>
-    Juntos, vamos a difundir la viralización cultural, romper barreras y construir puentes de 
-    entendimiento entre generaciones y culturas.
-  </p>
-  </div>
-</div>
-</div>
-<!-- Aqui termina el codigo del About Us-->
-
-<!-- Aqui empieza el codigo del Footer -->
-  <footer>
-    <div class="container_footer">
-      <div class="iconos_footer">
-        <a href="#" target="_blank"><img src="./Imagenes/Instagram.png" alt="icono_Instagram"></a>
-        <a href="#" target="_blank"><img src="./Imagenes/Youtube.png" alt="icono_Youtube"></a>
-        <a href="#" target="_blank"><img src="./Imagenes/Twitter.png" alt="icono_Twitter"></a>
-        <a href="#" target="_blank"><img src="./Imagenes/Facebook.png" alt="icono_Facebook"></a>
-        <a href="#" target="_blank"><img src="./Imagenes/Linkedin.png" alt="icono_Linkedin"></a>
-      </div>
-      <div class="terminos_privacidad">
-        <a href="#" target="_blank">Términos de servicio</a>
-        <a href="#" target="_blank">Política de privacidad</a>
-      </div>
     </div>
-    <p>&copy; 2023 ArtSnap, Inc. Todos los derechos reservados.</p>
-  </footer>
-<!-- Aqui termina el codigo del Footer -->
+    <script src="banner.js"></script>
+    <!-- Fin del contenido del banner -->
+
+    <!-- Contenido de la imagen principal de la página -->
+    <div class="containerPrincipal">
+        <div class="texto-principal">
+            <h1>Concurso de <br>fotografía <br> creativa!</h1>
+            <button id="participa-btn" class="btn-participa">Participa!</button>
+        </div>
+    </div>
+    <!-- Fin del contenido de la imagen principal de la página -->
+
+    <!-- Código de los patrocinadores -->
+    <div id="patrocinadores" class="containerPatrocinadores">
+        <h1 class="h1Patrocinadores">Patrocinadores</h1>
+        <div class="row" id="patrocinadores-cards-container">
+        </div>
+    </div>
+    <!-- Fin del código de los patrocinadores -->
+
+    <!-- Código de Eventos/Recomendaciones -->
+    <div class="containerEventos">
+        <h1 class="h1Eventos">Eventos</h1>
+        <div class="row" id="eventos-cards-container">
+        </div>
+    </div>
+    <!-- Fin del código de Eventos/Recomendaciones -->
+
+    <!-- Código del About Us -->
+    <div id="about-us" class="containerAboutUs">
+        <h1 class="h1AboutUS">Acerca de nosotros</h1>
+        <div class="containerTextAboutUs">
+            <p>Desde la majestuosidad de la Sagrada Familia hasta las vibrantes calles del Barrio Gótico, desde la esencia de la cocina mediterránea hasta la emoción del fútbol en el Camp Nou, nuestro proyecto te sumergirá en una aventura educativa como ninguna otra.
+            <br><br>
+            Queremos empoderar a los adolescentes para que se conviertan en embajadores de la cultura, agentes del cambio y líderes del mañana.
+            <br><br>
+            Únete a nosotros y sé parte de una comunidad de mentes curiosas y corazones apasionados que buscan desafiar los límites de la educación tradicional y abrazar una nueva era de aprendizaje colaborativo y enriquecedor.
+            <br><br>
+            Juntos, vamos a difundir la viralización cultural, romper barreras y construir puentes de entendimiento entre generaciones y culturas.
+            </p>
+        </div>
+    </div>
+    <!-- Fin del código del About Us -->
+
+    <!-- Código del Footer -->
+    <footer>
+        <div class="container_footer">
+            <div class="iconos_footer">
+                <a href="#" target="_blank"><img src="./Imagenes/Instagram.png" alt="icono_Instagram"></a>
+                <a href="#" target="_blank"><img src="./Imagenes/Youtube.png" alt="icono_Youtube"></a>
+                <a href="#" target="_blank"><img src="./Imagenes/Twitter.png" alt="icono_Twitter"></a>
+                <a href="#" target="_blank"><img src="./Imagenes/Facebook.png" alt="icono_Facebook"></a>
+                <a href="#" target="_blank"><img src="./Imagenes/Linkedin.png" alt="icono_Linkedin"></a>
+            </div>
+            <div class="terminos_privacidad">
+                <a href="#" target="_blank">Términos de servicio</a>
+                <a href="#" target="_blank">Política de privacidad</a>
+            </div>
+        </div>
+        <p>&copy; 2023 ArtSnap, Inc. Todos los derechos reservados.</p>
+    </footer>
+    <!-- Fin del código del Footer -->
 </body>
-
-
-
-
-
-
->>>>>>> Stashed changes
+</html>
