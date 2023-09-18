@@ -51,13 +51,21 @@ document.addEventListener('DOMContentLoaded', async function () {
     }
   });
   
+
   // Código jQuery para mostrar un modal al hacer clic en el botón "Participa"
-  $(document).ready(function () {
+  /*$(document).ready(function () {
     $("#participa-btn").click(function () {
         $("#loginModal").modal("show");
     });
   });
-  
+  */
+
+var participaButton = document.getElementById("participa-btn");
+  participaButton.addEventListener("click", function(){
+    console.log("Botón de Participa clickeado");
+      window.location.href = "index-nuevo-registro.html";
+  });
+
   // Contador de tiempo para un evento
   const countdownDate = new Date("2023-09-19").getTime();
   
