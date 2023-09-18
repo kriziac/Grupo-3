@@ -28,27 +28,32 @@
                     <p class="mb-5">
                         Ingresa la siguiente información para registrarte.
                     </p>
+                    <p id="redireccion-inicio-sesion">
+                        ¿Ya tienes una cuenta? <a href="index-Inicio-de-sesion.html">Inicia sesión</a>
+                    </p>
+
+
                     <form>
                         <fieldset>
                             <legend class="font-weight-bold">Información Personal</legend>
                             <div class="form-row mb-2">
                                 <div class="form-group col-md-6">
                                     <label for="nombre">Nombre <span class="text-danger">*</span></label>
-                                    <input type="text" id="nombre" class="form-control" placeholder="Tu nombre" aria-label="Nombre" required>
+                                    <input type="text" id="nombre" class="form-control" placeholder="Tu nombre" maxlength="20" aria-label="Nombre" required>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="apellido">Apellido <span class="text-danger">*</span></label>
-                                    <input type="text" id="apellido" class="form-control" placeholder="Tu apellido" aria-label="Apellido" required>
+                                    <input type="text" id="apellido" class="form-control" placeholder="Tu apellido"maxlength="20" aria-label="Apellido" required>
                                 </div>
                             </div>
                         </fieldset>
                         <div class="form-group mb-3">
                             <label for="correo">Correo electrónico <span class="text-danger">*</span></label>
-                            <input type="email" id="correo" class="form-control" placeholder="Ingresa tu correo electrónico" aria-label="Correo electrónico" required>
+                            <input type="email" id="correo" class="form-control" placeholder="Ingresa tu correo electrónico" maxlength="30" aria-label="Correo electrónico" required>
                         </div>
                         <div class="form-group mb-3">
                             <label for="contrasena">Contraseña <span class="text-danger">*</span></label>
-                            <input type="password" id="contrasena" class="form-control" placeholder="Ingresa una contraseña" aria-label="Contraseña" required>
+                            <input type="password" id="contrasena" class="form-control" placeholder="Ingresa una contraseña" maxlength="20" aria-label="Contraseña" required>
                         </div>
                         <div class="form-group mb-5">
                             <div class="form-check">
@@ -61,6 +66,7 @@
                                     <a href="#">Nuestros servicios de notificación</a>
                                 </label>
                             </div>
+                
                         </div>
                         <button type="submit" class="btn btn-primary width-100" aria-label="Registrar">Regístrate</button>
                     </form>

@@ -39,7 +39,7 @@ body {
 
 
 .register-bg {
-    background-image: url('img/imgIS.jpg');
+    background-image: url('img-inicio-de-sesion/imgIS.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;

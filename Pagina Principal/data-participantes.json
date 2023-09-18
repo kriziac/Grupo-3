@@ -1,0 +1,244 @@
+[
+  {
+    "id": 1,
+    "usuario": "usuario1",
+    "foto": "imagenes-galeria/1.jpeg",
+    "numero_de_votos": 20
+  },
+  {
+    "id": 2,
+    "usuario": "usuario2",
+    "foto": "imagenes-galeria/2.jpeg",
+    "numero_de_votos": 37
+  },
+  {
+    "id": 3,
+    "usuario": "usuario3",
+    "foto": "imagenes-galeria/3.jpeg",
+    "numero_de_votos": 14
+  },
+  {
+    "id": 4,
+    "usuario": "usuario4",
+    "foto": "imagenes-galeria/4.jpeg",
+    "numero_de_votos": 29
+  },
+  {
+    "id": 5,
+    "usuario": "usuario5",
+    "foto": "imagenes-galeria/5.jpeg",
+    "numero_de_votos": 8
+  },
+  {
+    "id": 6,
+    "usuario": "usuario6",
+    "foto": "imagenes-galeria/6.jpeg",
+    "numero_de_votos": 22
+  },
+  {
+    "id": 7,
+    "usuario": "usuario7",
+    "foto": "imagenes-galeria/7.jpeg",
+    "numero_de_votos": 16
+  },
+  {
+    "id": 8,
+    "usuario": "usuario8",
+    "foto": "imagenes-galeria/8.jpeg",
+    "numero_de_votos": 33
+  },
+  {
+    "id": 9,
+    "usuario": "usuario9",
+    "foto": "imagenes-galeria/9.jpeg",
+    "numero_de_votos": 25
+  },
+  {
+    "id": 10,
+    "usuario": "usuario10",
+    "foto": "imagenes-galeria/10.jpeg",
+    "numero_de_votos": 11
+  },
+  {
+    "id": 11,
+    "usuario": "usuario11",
+    "foto": "imagenes-galeria/11.jpeg",
+    "numero_de_votos": 41
+  },
+  {
+    "id": 12,
+    "usuario": "usuario12",
+    "foto": "imagenes-galeria/12.jpeg",
+    "numero_de_votos": 18
+  },
+  {
+    "id": 13,
+    "usuario": "usuario13",
+    "foto": "imagenes-galeria/13.jpeg",
+    "numero_de_votos": 35
+  },
+  {
+    "id": 14,
+    "usuario": "usuario14",
+    "foto": "imagenes-galeria/14.jpeg",
+    "numero_de_votos": 13
+  },
+  {
+    "id": 15,
+    "usuario": "usuario15",
+    "foto": "imagenes-galeria/15.jpeg",
+    "numero_de_votos": 27
+  },
+  {
+    "id": 16,
+    "usuario": "usuario16",
+    "foto": "imagenes-galeria/16.jpeg",
+    "numero_de_votos": 31
+  },
+  {
+    "id": 17,
+    "usuario": "usuario17",
+    "foto": "imagenes-galeria/17.jpeg",
+    "numero_de_votos": 9
+  },
+  {
+    "id": 18,
+    "usuario": "usuario18",
+    "foto": "imagenes-galeria/18.jpeg",
+    "numero_de_votos": 24
+  },
+  {
+    "id": 19,
+    "usuario": "usuario19",
+    "foto": "imagenes-galeria/19.jpeg",
+    "numero_de_votos": 38
+  },
+  {
+    "id": 20,
+    "usuario": "usuario20",
+    "foto": "imagenes-galeria/20.jpeg",
+    "numero_de_votos": 19
+  },
+  {
+    "id": 21,
+    "usuario": "usuario21",
+    "foto": "imagenes-galeria/21.jpeg",
+    "numero_de_votos": 12
+  },
+  {
+    "id": 22,
+    "usuario": "usuario22",
+    "foto": "imagenes-galeria/22.jpeg",
+    "numero_de_votos": 36
+  },
+  {
+    "id": 23,
+    "usuario": "usuario23",
+    "foto": "imagenes-galeria/23.jpeg",
+    "numero_de_votos": 5
+  },
+  {
+    "id": 24,
+    "usuario": "usuario24",
+    "foto": "imagenes-galeria/24.jpeg",
+    "numero_de_votos": 30
+  },
+  {
+    "id": 25,
+    "usuario": "usuario25",
+    "foto": "imagenes-galeria/25.jpeg",
+    "numero_de_votos": 23
+  },
+  {
+    "id": 26,
+    "usuario": "usuario26",
+    "foto": "imagenes-galeria/26.jpeg",
+    "numero_de_votos": 3
+  },
+  {
+    "id": 27,
+    "usuario": "usuario27",
+    "foto": "imagenes-galeria/27.jpeg",
+    "numero_de_votos": 40
+  },
+  {
+    "id": 28,
+    "usuario": "usuario28",
+    "foto": "imagenes-galeria/28.jpeg",
+    "numero_de_votos": 7
+  },
+  {
+    "id": 29,
+    "usuario": "usuario29",
+    "foto": "imagenes-galeria/29.jpeg",
+    "numero_de_votos": 28
+  },
+  {
+    "id": 30,
+    "usuario": "usuario30",
+    "foto": "imagenes-galeria/30.jpeg",
+    "numero_de_votos": 6
+  },
+  {
+    "id": 31,
+    "usuario": "usuario31",
+    "foto": "imagenes-galeria/31.jpeg",
+    "numero_de_votos": 34
+  },
+  {
+    "id": 32,
+    "usuario": "usuario32",
+    "foto": "imagenes-galeria/32.jpeg",
+    "numero_de_votos": 15
+  },
+  {
+    "id": 33,
+    "usuario": "usuario33",
+    "foto": "imagenes-galeria/33.jpeg",
+    "numero_de_votos": 10
+  },
+  {
+    "id": 34,
+    "usuario": "usuario34",
+    "foto": "imagenes-galeria/34.jpeg",
+    "numero_de_votos": 32
+  },
+  {
+    "id": 35,
+    "usuario": "usuario35",
+    "foto": "imagenes-galeria/35.jpeg",
+    "numero_de_votos": 21
+  },
+  {
+    "id": 36,
+    "usuario": "usuario36",
+    "foto": "imagenes-galeria/36.jpeg",
+    "numero_de_votos": 26
+  },
+  {
+    "id": 37,
+    "usuario": "usuario37",
+    "foto": "imagenes-galeria/37.jpeg",
+    "numero_de_votos": 42
+  },
+  {
+    "id": 38,
+    "usuario": "usuario38",
+    "foto": "imagenes-galeria/38.jpeg",
+    "numero_de_votos": 17
+  },
+  {
+    "id": 39,
+    "usuario": "usuario39",
+    "foto": "imagenes-galeria/39.jpeg",
+    "numero_de_votos": 4
+  },
+  {
+    "id": 40,
+    "usuario": "usuario40",
+    "foto": "imagenes-galeria/40.jpeg",
+    "numero_de_votos": 39
+  }
+]
+
+  

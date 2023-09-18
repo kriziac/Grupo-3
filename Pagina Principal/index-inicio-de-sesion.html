@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -21,7 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
-    <link href="styles.css" rel="stylesheet" />
+    <link href="styles-inicio-de-sesion.css" rel="stylesheet" />
 
     <title>Inicio de sesión</title>
   </head>
@@ -30,40 +29,39 @@
       <div class="row no-gutters bg-white">
         <div class="col-xl-6 col-lg-12 d-flex">
           <div class="container align-self-center p-6">
-            <h1 class="font-weight-bold mb-5 text-center"> Inicia sesión!</h1>
+            <h2 class="font-weight-bold mb-5 text-center"> Inicia sesión!</h2>
             <form>
               <div class="form-group mb-3">
-                <label class="font-weight-bold"
+                <label for="email" class="font-weight-bold"
                   >Correo electrónico <span class="text-danger">*</span></label
                 >
                 <input
                   type="email"
                   class="form-control"
+                  id="email"
                   placeholder="Ingresa tu correo electrónico"
                 />
               </div>
               <div class="form-group mb-3">
-                <label class="font-weight-bold"
+                <label for="password" class="font-weight-bold"
                   >Contraseña <span class="text-danger">*</span></label
                 >
                 <input
                   type="password"
                   class="form-control"
+                  id="password"
                   placeholder="Ingresa una contraseña"
                 />
               </div>
               <div class="form-group mb-5 text-center">
                   <label class="form-check-label"
                     >
-                    <a href="#">Crea una cuenta</a></span
-                  ><br>
-                    <a href="#">Olvidaste tu clave?</a></span
-                  >
-                    </label
-                  >
+                    <a href="index-nuevo-registro.html" role="link" aria-label="Crear una cuenta">Crea una cuenta</a><br>
+                    <a href="index-recuperacion-contraseña.html" role="link" aria-label="Olvidaste tu clave?">Olvidaste tu clave?</a>
+                  </label>
               </div>
               <div class="col text-center">
-              <button class="btn btn-primary width-100">Iniciar sesión</button>
+                <button type="submit" class="btn btn-primary width-100">Iniciar sesión</button>
               </div>
             </form>
           </div>
@@ -75,7 +73,6 @@
     </section>
 
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

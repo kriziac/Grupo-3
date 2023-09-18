@@ -160,9 +160,6 @@ footer p {
     text-decoration: none;
 }
 
-
-
-
 button {
     cursor: pointer;
     font-weight: 700;
@@ -195,5 +192,6 @@ button {
   button:active {
     transform: scale(0.95);
   }
+  
   
   
