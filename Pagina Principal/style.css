@@ -1,0 +1,418 @@
+/* Paleta de colores:
+#FACC2F Amarillo
+#322BAA Azul
+#712C96 Morado
+*/
+
+/* Reset de estilos para el body */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Estilos del Banner */
+.banner {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to right, #FFA500, #FFFF00);
+    background-size: 200% 100%;
+    animation: moveBanner 15s linear infinite;
+    white-space: nowrap;
+    font-family: "montserrat", sans-serif;
+}
+
+@keyframes moveBanner {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+.countdown-wrapper {
+    flex: 1;
+    text-align: center;
+    color: white;
+}
+
+.countdown {
+    font-size: 18px;
+}
+
+#countdown-timer {
+    font-size: 24px;
+}
+
+/* Contenido de la imagen principal de la página */
+.containerPrincipal {
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent), url(Imagenes/artwork.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 5%;
+}
+
+.texto-principal {
+    position: absolute;
+    top: 10%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto-principal h1 {
+    font-size: 100px;
+    font-weight: 1000;
+    font-family: 'montserrat', sans-serif;
+    color: #FACC2F;
+    text-align: center;
+}
+
+/* Estilos para el botón "Participa" */
+.btn-participa {
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 4px;
+    font-weight: 800;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    width: 250px;
+    height: 60px;
+}
+
+.btn-participa {
+    background: purple;
+    box-shadow: 0 0 25px #FACC2F;
+}
+
+.btn-participa:hover {
+    box-shadow: 0 0 5px #FACC2F,
+                0 0 25px #FACC2F,
+                0 0 50px #FACC2F,
+                0 0 100px #FACC2F;
+}
+
+/* Estilos para la sección de Eventos */
+.containerEventos {
+    padding: 3%;
+}
+
+.h1Eventos {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 45px;
+    letter-spacing: 0px;
+    display: flex;
+    align-items: center;
+    font-family: "roboto", sans-serif;
+    position: relative;
+}
+
+.h1Eventos::before,
+.h1Eventos::after {
+    content: "";
+    flex: 300px;
+    height: 4px;
+    background-color: purple;
+}
+
+.eventos-cards-container {
+    padding: rem;
+    max-width: 1400px;
+    display: grid;
+    justify-content: center;
+    place-content: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-color: black;
+}
+
+/* Otros estilos para eventos y botones */
+.evento-fotos {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.evento-card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 1rem;
+    flex-grow: 3;
+    font-family: "montserrat", sans-serif;
+}
+
+.evento-card-title {
+    font-size: 2rem;
+    margin-bottom: 1px;
+    align-items: center;
+    font-family: 'roboto', sans-serif;
+}
+
+.btn {
+    cursor: pointer;
+    display: block;
+    border-radius: 0.25rem;
+    text-align: center;
+    outline: 2px solid transparent;
+    color: rgba(128, 0, 128, var(--text-opacity));
+    border: 2px solid purple;
+    background-color: transparent;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: purple;
+    border-color: #712C96;
+}
+
+.card-text2 strong {
+    font-weight: bold;
+    text-align: left;
+    display: block;
+    font-family: 'roboto', sans-serif;
+}
+
+.col-lg-4 {
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    bottom: 0%;
+}
+
+/* Estilos para la sección "Acerca de nosotros" */
+.containerTextAboutUs {
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: larger;
+    font-family: "montserrat", sans-serif;
+}
+
+.containerAboutUs {
+    background-color: #FACC2F;
+    padding: 3%;
+}
+
+.h1AboutUS {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 45px;
+    letter-spacing: 0px;
+    display: flex;
+    align-items: center;
+    font-family: "roboto", sans-serif;
+    position: relative;
+}
+
+.h1AboutUS::before,
+.h1AboutUS::after {
+    content: "";
+    flex: 300px;
+    height: 4px;
+    background-color: purple;
+}
+
+/* Estilos para la sección de Patrocinadores */
+#patrocinadores-cards-container {
+    display: grid;
+    padding: 3%;
+    height: 100%;
+}
+
+.patrocinador-logo {
+    filter: grayscale(100%);
+    width: 80%;
+    height: auto;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+}
+
+.h1Patrocinadores {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 45px;
+    letter-spacing: 0px;
+    display: flex;
+    align-items: center;
+    font-family: "roboto", sans-serif;
+    padding: 3%;
+}
+
+.h1Patrocinadores::before,
+.h1Patrocinadores::after {
+    content: "";
+    flex: 300px;
+    height: 4px;
+    background-color: purple;
+}
+
+/* Media queries para responsividad */
+@media (min-width: 768px) {
+    #patrocinadores-cards-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    #patrocinadores-cards-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 575px) {
+    #patrocinadores-cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Estilos para el Footer */
+footer {
+    width: 100%;
+    background-color: #322BAA;
+    color: #A0AEC0;
+    padding: 6px 2px 2px 2px;
+    font-size: medium;
+}
+
+footer p {
+    text-align: center;
+    font-family: "montserrat", sans-serif;
+}
+
+.container_footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.iconos_footer {
+    width: 60%;
+    padding-left: 70px;
+}
+
+.iconos_footer img {
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+}
+
+.iconos_footer img:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.terminos_privacidad {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-family: "montserrat", sans-serif;
+}
+
+.terminos_privacidad a {
+    text-decoration: none;
+}
+
+/* Estilos de navegación y formulario de inicio de sesión */
+#navegacion {
+    position: fixed;
+    width: 100%;
+    z-index: 6666;
+    font-family: "montserrat", sans-serif;
+    background-color: #ffa751;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: black;
+    margin: 0 12px;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+#menu ul li a:hover {
+    color: blueviolet;
+}
+
+#redes a {
+    color: black;
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+#redes ul li a:hover {
+    color: blueviolet;
+}
+
+#sesion button {
+    color: black;
+    font-size: 20px;
+}
+
+#sesion button:hover {
+    color: blueviolet;
+}
+
+/* Estilos del formulario de inicio de sesión */
+form .formulario {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.formulario input {
+    width: 140%;
+    padding: 0 15px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.formulario label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: .5s;
+    pointer-events: none;
+}
+
+.pass {
+    font-size: 0.8rem;
+    margin: 30px 0 20px 5px;
+    cursor: pointer;
+}
+
+.pass:hover {
+    text-decoration: underline;
+}
+
+#btn-login {
+    width: 300%;
+    height: 50px;
+    cursor: pointer;
+    outline: none;
+}

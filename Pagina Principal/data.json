@@ -1,0 +1,56 @@
+[
+    {
+      "id": 1,
+      "name": "Park Güell",
+      "description": "El Park Güell, un mágico rincón de arte y naturaleza diseñado por Gaudí que cautiva los sentidos.",
+      "location": "Carrer d'Olot, 08024 Barcelona, España.",
+      "date": "Todos los dias de 9:30–19:30",
+      "img": "https://www.theconica.com/assets/cache/uploads/entorno/570x373/park-guell-barcelona.jpg",
+      "url": "https://parkguell.barcelona/es?q=es"
+  },
+  {
+      "id": 2,
+      "name": "Explora Montserrat",
+      "description": "Descubre la magia de Montserrat y déjate cautivar por su belleza sin igual, una aventura de senderismo única",
+      "location": "Montserrat",
+      "date": "Basílica: 7-20. Museo: 10-17:45",
+      "img": "https://elviajedesofi.s3.eu-west-3.amazonaws.com/wp-content/uploads/2020/09/14172745/Barcelona278.jpg",
+      "url": "https://www.montserratvisita.com/es/index.html"
+    },
+    {
+      "id": 3,
+      "name": "Ruta dels 7 gorgs",
+      "description": "Una ruta de montaña con estanques de agua cristalina y un contacto directo con la naturaleza.",
+      "location": "Campdevànol, Girona",
+      "date": "Abierto las 24 horas",
+      "img": "https://media-cdn.tripadvisor.com/media/photo-s/17/88/c8/94/ruta-del-7-gorgs.jpg",
+      "url": "https://www.mochilaenlaespalda.com/ruta-dels-7-gorgs/"
+    },
+    {
+      "id": 4,
+      "name": "Museo del Agua",
+      "description": "Te embarcarás en un viaje en el que todo fluye alrededor del agua a través de las actividades más sorprendentes.",
+      "location": "Cornellà de Llobregat",
+      "date": "De martes a sábado:10.00 a 20.00. Domingos y festivos: 10.00 a 14.00.",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/5/57/Amargos-Cornella-EstacioAigues-2555sh.jpg",
+      "url": "https://www.museudelesaigues.cat/es/"
+    },
+    {
+      "id": 5,
+      "name": "Fiestas de gracia",
+      "description": "Colorida y alegre, la Fiesta de Gracia es una tradición llena de música, bailes y diversión para toda la familia.",
+      "location": "Barrio de Gracia",
+      "date": "15 al 21 de Agosto de 2023",
+      "img": "https://blog.apartmentbarcelona.com/wp-content/uploads/2017/03/Fiesta-Gracia.jpg",
+      "url": "https://www.festamajordegracia.cat/"
+    },
+    {
+      "id": 6,
+      "name": "Mercado medieval VIC 2023",
+      "description": "Viaja en el tiempo viendo desde tu cámara, la Feria Medieval más espectacular de la zona.",
+      "location": "Barcelona",
+      "date": "6 al 10 de Diciembre 2023: 10-20h",
+      "img": "https://www.gastroteca.cat/wp-content/uploads/Mercat-Medieval-Vic1-767x500.jpg",
+      "url": "https://vicfires.cat/mercat-medieval-vic-2023"
+    }
+  ]

@@ -1,0 +1,84 @@
+:root {
+    --color-dark-xx: #1f232b;
+    --color-light: #000000;
+    --color-grey: #ffa751;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    background-color: var(--color-grey);
+    color: var(--color-light);
+    letter-spacing: .05rem;
+}
+
+
+.p-6 {
+    padding: 4rem 5rem;
+}
+
+.contact-box {
+    padding: 4rem 15rem;
+
+}
+
+.btn {
+    font-weight: 400;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    min-width: 10rem;
+
+}
+
+.form-control {
+    border: 1px solid var(--color-dark-xx);
+    border-radius: .2rem;
+    padding: 1.5rem 1rem;
+}
+
+
+.register-bg {
+    background-image: url('Imagenes/recpass.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.testiomonial {
+    bottom: 10px
+}
+
+@media (max-width: 575.98px) {
+    .p-6 {
+        padding: 2rem;
+    }
+
+    .contact-box {
+        padding: 0;
+    }
+
+    .width-100 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .register-bg {
+        min-height: 50vh;
+    }
+}
+
+@media (max-width: 820.98px) {
+    .p-6 {
+        padding: 2rem;
+    }
+
+    .contact-box {
+        padding: 0;
+    }
+
+    .width-100 {
+        width: 100%;
+    }
+} 

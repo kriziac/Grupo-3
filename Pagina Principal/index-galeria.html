@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Snap - Galeria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style-galeria.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500;1,800&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    
+</head>
+
+<body>
+    <!-- HEADER - NAVBAR -->
+    <header id="navegacion">
+        <nav class="navbar navbar-white bg-white navbar-expand-lg">
+            <div class="container-fluid">
+                <!-- Logo -->
+                <a href="index.html"><img src="./Imagenes/Logo.png" alt="logo"></a>
+
+                <!-- Icono Menu -->
+                <button class="navbar-toggler" id="buttonresponsive" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menú de navegación -->
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav me-auto">
+                        <li class="navbar-item">
+                            <a href="index.html" class="nav-link active">Acerca de nosotros</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="index.html" class="nav-link">Patrocinantes</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#" class="nav-link">Premios</a>
+                        </li>
+                        <li class="navbar-item">
+                            <a href="#" class="nav-link">Contacto</a>
+                        </li>
+                    </ul>
+
+                    <!-- Botones de inicio de sesión -->
+                    <ul class="navbar-nav flex-row flex-wrap text-light" id="sesion">
+                        <li class="navbar-item col-6 col-md-auto p-3">
+                            <button id="loginBtn" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#loginModal">
+                                <i class="bi bi-person-fill-lock"></i>
+                            </button>
+                            <small class="d-md-none ms-2">Iniciar Sesión</small>
+                        </li>
+                        <li class="navbar-item col-6 col-md-auto p-3">
+                            <button id="cerrar-sesion" type="button" class="btn btn-dark">
+                                <i class="bi bi-box-arrow-in-right"></i>
+                            </button>
+                            <small class="d-md-none ms-2">Cerrar Sesión</small>
+                        </li>             
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+<div id="datos-participantes"></div>
+
+<br>
+                
+                    <button id="continue-button">
+                        <span>Siguiente</span>
+                        <svg width="34" height="34" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="37" cy="37" r="35.5" stroke="black" stroke-width="3"></circle>
+                            <path d="M25 35.5C24.1716 35.5 23.5 36.1716 23.5 37C23.5 37.8284 24.1716 38.5 25 38.5V35.5ZM49.0607 38.0607C49.6464 37.4749 49.6464 36.5251 49.0607 35.9393L39.5147 26.3934C38.9289 25.8076 37.9792 25.8076 37.3934 26.3934C36.8076 26.9792 36.8076 27.9289 37.3934 28.5147L45.8787 37L37.3934 45.4853C36.8076 46.0711 36.8076 47.0208 37.3934 47.6066C37.9792 48.1924 38.9289 48.1924 39.5147 47.6066L49.0607 38.0607ZM25 38.5L48 38.5V35.5L25 35.5V38.5Z" fill="black"></path>
+                        </svg>
+                    </button>
+
+                   
+                      
+
+                
+                  <br>  
+ <!-- Código del Footer -->
+    <footer>
+        <div class="container_footer">
+            <div class="iconos_footer">
+                <a href="#" target="_blank"><img src="imagenes-galeria/Instagram.png" alt="icono_Instagram"></a>
+                <a href="#" target="_blank"><img src="imagenes-galeria/Youtube.png" alt="icono_Youtube"></a>
+                <a href="#" target="_blank"><img src="imagenes-galeria/Twitter.png" alt="icono_Twitter"></a>
+                <a href="#" target="_blank"><img src="imagenes-galeria/Facebook.png" alt="icono_Facebook"></a>
+                <a href="#" target="_blank"><img src="imagenes-galeria/Linkedin.png" alt="icono_Linkedin"></a>
+            </div>
+            <div class="terminos_privacidad">
+                <a href="#" target="_blank">Términos de servicio</a>
+                <a href="#" target="_blank">Política de privacidad</a>
+            </div>
+        </div>
+        <p>&copy; 2023 ArtSnap, Inc. Todos los derechos reservados.</p>
+    </footer>
+    <!-- Fin del código del Footer -->
+    <script src="script-galeria.js"></script>
+</body>
+</html>
+ 
+ 

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos-perfil.css">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
+
+  <title>Perfil de Usuario</title>
+</head>
+
+<body>
+  <main>
+  
+    <!-- HEADER - NAVBAR -->
+    <header id="navegacion">
+      <nav class="navbar navbar-white bg-white navbar-expand-lg">
+          <div class="container-fluid">
+              <!-- Logo -->
+              <a href="index.html"><img src="./Imagenes/Logo.png" alt="logo"></a>
+
+              <!-- Icono Menu -->
+              <button class="navbar-toggler" id="buttonresponsive" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- Menú de navegación -->
+              <div class="collapse navbar-collapse" id="menu">
+                  <ul class="navbar-nav me-auto">
+                      <li class="navbar-item">
+                          <a href="index.html" class="nav-link active">Acerca de nosotros</a>
+                      </li>
+                      <li class="navbar-item">
+                          <a href="index.html" class="nav-link">Patrocinantes</a>
+                      </li>
+                      <li class="navbar-item">
+                          <a href="#" class="nav-link">Premios</a>
+                      </li>
+                      <li class="navbar-item">
+                          <a href="#" class="nav-link">Contacto</a>
+                      </li>
+                  </ul>
+
+                  <!-- Botones de inicio de sesión -->
+                  <ul class="navbar-nav flex-row flex-wrap text-light" id="sesion">
+                      <li class="navbar-item col-6 col-md-auto p-3">
+                          <button id="loginBtn" type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#loginModal">
+                              <i class="bi bi-person-fill-lock"></i>
+                          </button>
+                          <small class="d-md-none ms-2">Iniciar Sesión</small>
+                      </li>
+                      <li class="navbar-item col-6 col-md-auto p-3">
+                          <button id="cerrar-sesion" type="button" class="btn btn-dark">
+                              <i class="bi bi-box-arrow-in-right"></i>
+                          </button>
+                          <small class="d-md-none ms-2">Cerrar Sesión</small>
+                      </li>             
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
+
+  <br>
+  <br>
+  <br>
+
+    <div class="container text-center">
+      <div class="row">
+        <div class="caja col-6">
+          <h1>Editar perfil</h1>
+          <form method="post" action="#" enctype="multipart/form-data">
+            <div>
+              <img src="https://hpsnf.com/wp-content/uploads/2021/04/avatar.jpg" alt="avatar" id="img" />
+              <input type="file" name="foto" id="foto" accept="image/*" />
+              <label for="foto">Cambiar foto</label>
+            </div>
+            <div>
+              <label for="nombre">Nombre:</label>
+              <input type="text" name="nombre" autocomplete="off" />
+            </div>
+            <div>
+              <label for="apellido">Apellidos:</label>
+              <input type="text" name="apellido" autocomplete="off" />
+            </div>
+
+            <div>
+
+              <button style="text-align: center;" type="button" onclick="alert('Se guardo correctamente')" ;>Guardar cambios</button>
+
+            </div>
+          </form>
+        </div>
+        <div class="caja col-6">
+          <div id="wrapper">
+            <h1>Subir Imágenes</h1>
+            <div id="container-input">
+              <div class="wrap-file">
+                <div class="content-icon-camera">
+                  <input type="file" id="file" name="file[]" accept="image/*" multiple />
+                  <div class="icon-camera"></div>
+                </div>
+                <div id="preview-images">
+                  
+                </div>
+              </div>
+              
+              <a id="publish" class="btn btn-primary" href="index.html">Publicar</a>  
+              
+            </div>
+            <div class="preload">
+              <img src="Imagenes/preload.gif" alt="preload" />
+            </div>
+            <h2 id="success"></h2>
+          </div>
+          <a class="btn btn-primary" href="index-galeria.html">Ir a Galeria...</a>  
+          <script src="subirImagenes.js"></script>
+        </div>
+
+
+      </div>
+    </div>
+  </main>
+  <script src="script-perfil.js"></script>
+</body>
+
+</html>

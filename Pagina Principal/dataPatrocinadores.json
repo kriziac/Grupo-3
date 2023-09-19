@@ -1,0 +1,56 @@
+{
+    "patrocinadores": [
+        {
+            "id": 1,
+            "nombre": "Casanova Foto",
+            "logo": "https://cbiolegs.cat/wp-content/uploads/2015/06/casanovafoto3.jpg",
+            "website":"https://www.casanovafoto.com/"
+        },
+        {
+            "id": 2,
+            "nombre": "Foto K",
+            "logo": "https://fotok.es/blog/wp-content/uploads/2016/09/fotok-logo-300x94.jpg",
+            "website":"https://fotok.es/"
+        },
+        {
+            "id": 3,
+            "nombre": "Barcelona Academy of Art",
+            "logo": "https://www.academyofartbarcelona.com/wp-content/uploads/2019/02/logo-home-default.png",
+            "website":"https://www.academyofartbarcelona.com/"
+        },
+        {
+            "id": 4,
+            "nombre": "IDEP Barcelona",
+            "logo": "https://www.idep.es/assets/uploads/2020/07/logo-IDEP-Alt.png",
+            "website":"https://www.idep.es/estudios/foto/titulo-foto/?utm_source=google&utm_medium=cpc&utm_campaign=titulo_foto&utm_term=estudiar%20fotografia&gclid=CjwKCAjwgZCoBhBnEiwAz35RwogpEkU0VsNxreoID0JRLVwncmQuw9I0l5Q6RGdgZK1__VIKA9kKtRoCFKYQAvD_BwE"
+        },
+        {
+            "id": 5,
+            "nombre": "Barcelona Cultura",
+            "logo": "https://www.agenda21culture.net/sites/default/files/pictures/cities/content/logo-bcn-cultura_1.png",
+            "website":"https://www.barcelona.cat/barcelonacultura/es"
+        },
+        {
+            "id": 6,
+            "nombre": "Civitatis",
+            "logo": "https://cdn.uc.assets.prezly.com/50a69e84-66dc-4967-a918-fb432e9234a3/-/crop/447x447/0,19/-/preview/-/inline/no/Captura+de+pantalla+2020-02-10+a+la%28s%29+16.14.00.png",
+            "website":"https://www.civitatis.com/es/barcelona?aid=100&cmp=es_ES_Nonbrand&cmpint=_DestinosTop_Barcelona_RSA&gclsrc=aw.ds&gclid=CjwKCAjwgZCoBhBnEiwAz35RwmcRLBjky2cQEwpBG6PiKCJcRwLGdURebB60vGzL7INnHFxPkSIOCxoCDAcQAvD_BwE"
+        },
+        {
+            "id": 7,
+            "nombre": "TimeOut",
+            "logo":"https://experiences.timeout.cat/SECTIONS/social-metas/fb.jpg?v=m2U93nvD0",
+            "website":"https://www.timeout.es/barcelona/es"
+        },
+        {
+            "id": 8,
+            "nombre": "Espacio Joven La Fontana",
+            "logo": "https://diadeladiversitat.cat/wp-content/uploads/2014/09/Fontana-440x440.jpg",
+            "website":"https://lafontana.org/"
+        }
+
+
+
+
+    ]
+    }
