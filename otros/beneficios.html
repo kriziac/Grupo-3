@@ -1,86 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="beneficios.css" >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="beneficios.css">
 </head>
 
 <body>
-    <h1>¡Únete a nuestro emocionante concurso de fotografía y sus beneficios!</h1>
+  <h1>¡Únete a nuestro emocionante concurso de fotografía y sus beneficios!</h1>
 
-<div class="boxesContainer">
-  <div class="cardBox">
-    <div class="card">
-      <div class="front">
-        <h3>Exhibición Épica y Aventura Creativa: </h3>
-            
+  <div class="boxesContainer">
+    <div class="cardBox">
+      <div class="card">
+        <div class="front">
+          <h3>Exhibición Épica y Aventura Creativa: </h3>
+
+        </div>
+        <div class="back">
+          <h3> ¿Eres un joven aventurero fotógrafo?</h3>
+          <button class="show-info-button" onclick="mostrarInfo1()">Leer más ...</button>
+          <div class="info-card1" id="infoCard1">
+            <h3>Exhibición Épica y Aventura Creativa:</h3>
+            <p>Exhibición Épica y Aventura Creativa: ¿Eres un joven aventurero fotógrafo? Tienes la emocionante
+              oportunidad de mostrar tu talento y creatividad en una exhibición épica. Cada participación en el concurso
+              representa el primer paso en una aventura creativa que te lleva a explorar mundos visuales desconocidos.
+              Tus fotos se convierten en mapas que guían a los espectadores a través de tus experiencias y te permiten
+              compartir tus aventuras visuales con personas de todo el mundo.</p>
+          </div>
+
+        </div>
       </div>
-      <div class="back">
-        <h3> ¿Eres un joven aventurero fotógrafo?</h3>
-        <button class="show-info-button" onclick="mostrarInfo()">Leer más ...</button> 
-          
+    </div>
+
+    <div class="cardBox">
+      <div class="card">
+        <div class="front">
+          <h3>Premios Inimaginables:</h3>
+
+
+        </div>
+        <div class="back">
+          <h3>Prepárate para ser sorprendido</h3>
+          <button class="show-info-button" onclick="mostrarInfo2()">Leer más ...</button>
+          <div class="info-card1" id="infoCard2">
+            <h3>Premios Inimaginables:</h3>
+            <p>Premios Inimaginables: Prepárate para ser sorprendido por premios inimaginables que te llevan a vivir
+              aventuras reales. Desde emocionantes viajes a lugares exóticos hasta equipos fotográficos de vanguardia
+              que te permiten conquistar nuevos desafíos visuales, estos premios no solo reconocen tu habilidad, sino
+              que también te abren la puerta a nuevas experiencias y aventuras que solo la fotografía puede ofrecer.</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  
-  <div class="cardBox">
-    <div class="card">
-      <div class="front">
-        <h3>Premios Inimaginables:</h3>
-        
-        
-      </div>
-      <div class="back">
-        <h3>Prepárate para ser sorprendido</h3>
-        <button class="show-info-button" onclick="mostrarInfo()">Leer más ...</button> 
-        
-      </div>
-    </div>
-  </div>
-  
+
   <div class="cardBox">
     <div class="card">
       <div class="front">
         <h3>Mentoría de Expertos y Reconocimiento en el Mundo de la Fotografía:</h3>
-       
+
       </div>
       <div class="back">
         <h3> Imagina recibir orientación y consejos de maestros</h3>
-        <button class="show-info-button" onclick="mostrarInfo()">Leer más ...</button>   
-        
+        <button class="show-info-button" onclick="mostrarInfo3()">Leer más ...</button>
+        <div class="info-card2" id="infoCard3">
+          <h3>Mentoría de Expertos y Reconocimiento en el Mundo de la Fotografía:</h3>
+          <p>Mentoría de Expertos y Reconocimiento en el Mundo de la Fotografía: Imagina recibir orientación y consejos
+            de maestros de la fotografía que te llevan a nuevos niveles de habilidad y creatividad. Además, al
+            participar, tu nombre se une a los aventureros visuales reconocidos en el mundo de la fotografía,
+            brindándote la oportunidad de ser parte de una comunidad de artistas que comparten la pasión por la aventura
+            fotográfica. Aquí, cada foto es una historia que te define como un auténtico aventurero visual.</p>
+        </div>
+
       </div>
     </div>
   </div>
-  
+
   <div class="cardBox">
     <div class="card">
       <div class="front">
         <h3>Emocionantes Desafíos Temáticos:</h3>
-        
+
       </div>
       <div class="back">
         <h3>¡Es como embarcarse en una aventura creativa! </h3>
-        <button class="show-info-button" onclick="mostrarInfo()">Leer más ...</button>            
-        
-       
-        </div> 
-        
-         
+        <button class="show-info-button" onclick="mostrarInfo4()">Leer más ...</button>
+        <div class="info-card2" id="infoCard4">
+          <h3>Emocionantes Desafíos Temáticos:</h3>
+          <p>El concurso presenta una emocionante variedad de desafíos temáticos en cada edición. ¡Es como embarcarse en
+            una aventura creativa! Desde paisajes impresionantes hasta retratos emocionales y fotografía urbana
+            vibrante, cada tema es una nueva aventura fotográfica que te permite explorar y capturar el mundo desde
+            ángulos únicos y emocionantes. Si eres joven y apasionado por la aventura, estos desafíos te llevan a
+            lugares inexplorados de la fotografía y te inspiran a expresar tu creatividad de maneras sorprendentes.</p>
+        </div>
+
+
       </div>
+
+
     </div>
   </div>
+  </div>
 
-</div>    
-      
-    </div>    
-    
-    <script src="js.js"></script>
-    
+  </div>
 
-    
-    
+  </div>
+
+  <script src="beneficios.js"></script>
+
+
+
+
 </body>
 </html>

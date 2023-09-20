@@ -171,7 +171,7 @@
   /* Estilo para la tarjeta de información */
 .info-card1 {
   display: none;
-  background-color: #777575;
+  background-color: #042249;
   border: 1px solid #ccc;
   padding: 5px;
   width: 950px;
@@ -201,7 +201,39 @@
   padding: 20px 40px;
   cursor: pointer;
 }
+/* Estilo para la tarjeta de información */
+.info-card1 {
+  display: none;
+  background-color: blue;
+  border: 1px solid #ccc;
+  padding: 40px;
+  width: 800px;
+  position: relative;
+  top: 70px;
+  left: 100%;
+  transform: translateX(-40%);
+}
 
+.info-card2 {
+  display: none;
+  background-color: blue;
+  border: 1px solid #ccc;
+  padding: 40px;
+  width: 800px;
+  position: relative;
+  top: 70px;
+  right: 100%;
+  transform: translateX(-40%);
+}
+
+/* Estilo para el botón */
+.show-info-button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
 
   
 
