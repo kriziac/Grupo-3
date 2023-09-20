@@ -1,7 +1,7 @@
 /* Estilos para el contenedor de las tarjetas de participante (el elemento que contiene todas las tarjetas) */
 #datos-participantes {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Mostrar tantas tarjetas como sea posible en una fila, cada una con un ancho mínimo de 300px */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Mostrar tantas tarjetas como sea posible en una fila, cada una con un ancho mínimo de 300px */
     gap: 20px; /* Espacio entre las tarjetas */
     justify-items: center; /* Centrar horizontalmente las tarjetas */
 }
