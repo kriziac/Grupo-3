@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', async function () {
 
 
-  const countdownDate = new Date("2023-09-20").getTime();
+  const countdownDate = new Date("2023-10-20").getTime();
 
 const updateCountdown = () => {
     const currentTime = new Date().getTime();
