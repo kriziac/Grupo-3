@@ -1,30 +1,7 @@
 document.addEventListener('DOMContentLoaded', async function () {
-
-
-  const countdownDate = new Date("2023-09-20").getTime();
-
-const updateCountdown = () => {
-    const currentTime = new Date().getTime();
-    const timeRemaining = countdownDate - currentTime;
-
-    if (timeRemaining <= 0) {
-        document.getElementById("countdown-timer").innerHTML = "¡Es hoy!";
-    } else {
-        const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
-        document.getElementById("countdown-timer").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-    }
-};
-
-setInterval(updateCountdown, 1000);
-
-  
   try {
     // Cargar datos de eventos
-    const eventosResponse = await fetch('data.json');
+    const eventosResponse = await fetch('http://34.194.144.222:8080/events-api-v1/api/events');
     const eventosData = await eventosResponse.json();
 
     const eventosContainer = document.getElementById('eventos-cards-container');
@@ -49,31 +26,32 @@ setInterval(updateCountdown, 1000);
       eventosContainer.appendChild(card);
     });
 
-    // Cargar datos de patrocinadores
-    const patrocinadoresResponse = await fetch('dataPatrocinadores.json'); // Cambia el nombre del archivo JSON
-    const patrocinadoresData = await patrocinadoresResponse.json();
+    fetch('http://34.194.144.222:8080/events-api-v1/api-sponsors')
+    .then(response => response.json())
+    .then(data => {
+       
+        const logosContainer = document.getElementById('logos-container');
 
-    const patrocinadoresContainer = document.getElementById('patrocinadores-cards-container');
+        data.forEach(empresa => {
+            
+            const logo = document.createElement('img');
+            logo.src = empresa.logo;
+            logo.alt = empresa.name;
+            logo.classList.add('logo'); 
 
-    patrocinadoresData.patrocinadores.forEach((patrocinador) => {
-      const logoImagen = document.createElement('img');
-      logoImagen.src = patrocinador.logo;
-      logoImagen.alt = patrocinador.nombre;
+           
+            const link = document.createElement('a');
+            link.href = empresa.website;
+            link.target = '_blank';
+            link.appendChild(logo);
 
-      // Aplicar estilos CSS
-      logoImagen.classList.add('patrocinador-logo');
-
-      logoImagen.addEventListener('click', () => {
-        window.location.href = patrocinador.website;
-      });
-
-      patrocinadoresContainer.appendChild(logoImagen);
+           
+            logosContainer.appendChild(link);
+        });
+    })
+    .catch(error => {
+        console.error('Error:', error);
     });
-  } catch (error) {
-    console.log('Error al cargar los datos:', error);
-  }
-});
-
 
 // Código jQuery para mostrar un modal al hacer clic en el botón "Participa"
 /*$(document).ready(function () {
@@ -94,9 +72,12 @@ loginButton.addEventListener("click", function () {
   console.log("Botón de Inicio de Sesión");
   window.location.href = "index-inicio-sesion.html";
 });
-
+  } catch (error) {
+    console.error('Error:', error);
+  }
+});
 //elegir imagen de perfil
-
+/*
 const defaultFile = 'https://stonegatesl.com/wp-content/uploads/2021/01/avatar-300x300.jpg';
 
 const file = document.getElementById( 'foto' );
@@ -112,8 +93,27 @@ file.addEventListener( 'change', e => {
     img.src = defaultFile;
   }
 } );
-
+*/
 
 // Contador de tiempo para un evento
+const countdownDate = new Date("2023-09-19").getTime();
+
+const updateCountdown = () => {
+  const currentTime = new Date().getTime();
+  const timeRemaining = countdownDate - currentTime;
+
+  if (timeRemaining <= 0) {
+    document.getElementById("countdown-timer").innerHTML = "¡Es hoy!";
+  } else {
+    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+    document.getElementById("countdown-timer").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+  }
+};
+
+setInterval(updateCountdown, 1000);
 
 

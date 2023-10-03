@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const html = pageData.map(participante => `
             <div class="participante">
-                <img src="${participante.foto}" alt="Foto de ${participante.usuario}">
+                <img src="${participante.photo}" alt="Foto de ${participante.name}">
             </div>
         `).join('');
 
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Realiza la solicitud HTTP para obtener el archivo JSON
-    fetch("data-participantes.json")
+    fetch("http://34.194.144.222/events-api-v1/contestants")
         .then(response => {
             if (!response.ok) {
                 throw new Error("No se pudo cargar el archivo JSON.");
