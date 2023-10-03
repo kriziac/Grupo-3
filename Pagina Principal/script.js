@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', async function () {
+
   try {
     // Cargar datos de eventos
     const eventosResponse = await fetch('http://34.194.144.222:8080/events-api-v1/api/events');
