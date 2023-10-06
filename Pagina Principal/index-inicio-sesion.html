@@ -32,6 +32,59 @@
 
   </head>
   <body>
+       <!-- HEADER - NAVBAR -->
+     <header id="navegacion">
+      <nav class="navbar navbar-white bg-white navbar-expand-lg">
+          <div class="container-fluid">
+              <!-- Logo -->
+              <a href="index.html"><img src="./Imagenes/Logo.png" alt="logo"></a>
+
+              <!-- Icono Menu -->
+              <button class="navbar-toggler" id="buttonresponsive" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <!-- Menú de navegación -->
+              <div class="collapse navbar-collapse" id="menu">
+                  <ul class="navbar-nav me-auto">
+                      <li class="navbar-item">
+                          <a href="index.html" class="nav-link active">Acerca de nosotros</a>
+                      </li>
+                      <li class="navbar-item">
+                          <a href="index.html" class="nav-link">Patrocinantes</a>
+                      </li>
+                      <li class="navbar-item">
+                          <a href="#" class="nav-link">Premios</a>
+                      </li>
+                      <li class="navbar-item">
+                          <a href="index-contacto.html" class="nav-link">Contacto</a>
+                      </li>
+                  </ul>
+
+                  <!-- Botones de inicio de sesión -->
+                  <ul class="navbar-nav flex-row flex-wrap text-light" id="sesion">
+                      <li class="navbar-item col-6 col-md-auto p-3">
+                          <button id="loginBtn" type="button" class="btn btn-dark" data-bs-toggle="modal"
+                              data-bs-target="#loginModal">
+                              <i class="bi bi-person-fill-lock"></i>
+                          </button>
+                          <small class="d-md-none ms-2">Iniciar Sesión</small>
+                      </li>
+                      <li class="navbar-item col-6 col-md-auto p-3">
+                          <button id="cerrar-sesion" type="button" class="btn btn-dark">
+                              <i class="bi bi-box-arrow-in-right"></i>
+                          </button>
+                          <small class="d-md-none ms-2">Cerrar Sesión</small>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+  </header>
+  <br>
+    
     <section class="contact-box">
       <div class="row no-gutters bg-white">
         <div class="col-xl-6 col-lg-12 d-flex">
@@ -78,6 +131,6 @@
       </div>
     </section>
 
-
+    <script src="script-contacto.js"></script>   
   </body>
 </html>

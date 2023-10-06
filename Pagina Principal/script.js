@@ -97,7 +97,7 @@ file.addEventListener( 'change', e => {
 */
 
 // Contador de tiempo para un evento
-const countdownDate = new Date("2023-09-19").getTime();
+const countdownDate = new Date("2023-10-20").getTime();
 
 const updateCountdown = () => {
   const currentTime = new Date().getTime();
