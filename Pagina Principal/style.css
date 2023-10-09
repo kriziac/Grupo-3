@@ -24,6 +24,7 @@ body {
     font-family: "montserrat", sans-serif;
 }
 
+
 @keyframes moveBanner {
     0% {
         background-position: 0 0;
@@ -58,6 +59,8 @@ body {
     padding: 5%;
 }
 
+
+
 .texto-principal {
     position: absolute;
     top: 10%;
@@ -79,30 +82,16 @@ body {
 
 @media (min-width: 768px) {
     .containerPrincipal {
-        height: 80vh;
+        height: 675px;
     }
     .texto-principal h1 {
         font-size: 80px;
     }
 }
 
-@media (max-width: 767px) {
-    .containerPrincipal {
-        height: 500px;
-    }
-    .texto-principal h1 {
-        font-size: 60px;
-    }
-}
 
-@media (max-width: 576px) {
-    .containerPrincipal {
-        height: 10px;
-    }
-    .texto-principal h1 {
-        font-size: 40px;
-    }
-}
+
+
 
 
 /* Estilos para el botón "Participa" */
