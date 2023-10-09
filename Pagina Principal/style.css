@@ -17,7 +17,7 @@ body {
     align-items: center;
     width: 100%;
     height: 100px;
-    background-image: linear-gradient(to right, #FFA500, #FFFF00);
+    background-image: linear-gradient(to right, #FFA500, #FFD700, #FFFF00);
     background-size: 200% 100%;
     animation: moveBanner 15s linear infinite;
     white-space: nowrap;
@@ -104,6 +104,7 @@ body {
     }
 }
 
+
 /* Estilos para el botón "Participa" */
 .btn-participa {
     padding: 10px 20px;
@@ -131,6 +132,7 @@ body {
                 0 0 50px #FACC2F,
                 0 0 100px #FACC2F;
 }
+
 
 /* Estilos para la sección de Eventos */
 .containerEventos {
@@ -174,17 +176,19 @@ body {
 /* Otros estilos para eventos y botones */
 .evento-fotos {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: 250px;
+    object-fit:cover;
 }
 
 .evento-card-body {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: left;
     padding: 1rem;
     flex-grow: 3;
     font-family: "montserrat", sans-serif;
+
 }
 
 .evento-card-title {
@@ -204,6 +208,11 @@ body {
     border: 2px solid purple;
     background-color: transparent;
     width: 100%;
+    align-items: baseline;
+    
+}
+.btn-primary {
+    margin-top: auto; /* Empuja el botón hacia abajo para que se alinee en la parte inferior */
 }
 
 .btn:hover {
@@ -445,3 +454,4 @@ form .formulario {
     cursor: pointer;
     outline: none;
 }
+

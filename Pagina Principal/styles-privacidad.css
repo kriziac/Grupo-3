@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+
+.h1-privacidad {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 0px;
+    display: flex;
+    align-items: center;
+    font-family: "roboto", sans-serif;
+    position: relative;
+    margin-bottom: 0%;
+    padding :45px;
+}
+
+.h1-privacidad::before,
+.h1-privacidad::after {
+    content: "";
+    flex: 300px;
+    height: 4px;
+    background-color: purple;
+}
+
+/* Estilos para el Footer */
+footer {
+    width: 100%;
+    background-color: #322BAA;
+    color: #A0AEC0;
+    padding: 6px 2px 2px 2px;
+    font-size: medium;
+}
+
+footer p {
+    text-align: center;
+    font-family: "montserrat", sans-serif;
+}
+
+.container_footer {
+    display: flex;
+    flex-direction: row;
+}
+
+.iconos_footer {
+    width: 60%;
+    padding-left: 70px;
+}
+
+.iconos_footer img {
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+}
+
+.iconos_footer img:hover {
+    box-shadow: 0 0 10px white(0, 0, 0, 0.5);
+}
+
+.terminos_privacidad {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-family: "montserrat", sans-serif;
+}
+
+.terminos_privacidad a {
+    text-decoration: none;
+}
+
+/* Estilos de navegación y formulario de inicio de sesión */
+#navegacion {
+    position: fixed;
+    width: 100%;
+    z-index: 6666;
+    font-family: "montserrat", sans-serif;
+    background-color: #ffa751;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: white;
+    margin: 0 12px;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+#menu ul li a:hover {
+    color: blueviolet;
+}
+
+#redes a {
+    color: white;
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+#redes ul li a:hover {
+    color: blueviolet;
+}
+
+#sesion button {
+    color: white;
+    font-size: 20px;
+}
+
+#sesion button:hover {
+    color: blueviolet;
+}
+
+/* Estilos del formulario de inicio de sesión */
+form .formulario {
+    position: relative;
+    border-bottom: 2px solid white;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.formulario input {
+    width: 140%;
+    padding: 0 15px;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.formulario label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: .5s;
+    pointer-events: none;
+}
+
+.pass {
+    font-size: 0.8rem;
+    margin: 30px 0 20px 5px;
+    cursor: pointer;
+}
+
+.pass:hover {
+    text-decoration: underline;
+}
+
+#btn-login {
+    width: 300%;
+    height: 50px;
+    cursor: pointer;
+    outline: none;
+}
+  
+  #privacidad-container {
+    padding: auto;
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    place-content: center;
+  }
+  .privacidad-container p{
+    padding: 45px;
+   
+  }
+  
+   

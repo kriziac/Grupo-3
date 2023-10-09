@@ -1,204 +1,336 @@
 /* Estilos para el contenedor de las tarjetas de participante (el elemento que contiene todas las tarjetas) */
 #datos-participantes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Mostrar tantas tarjetas como sea posible en una fila, cada una con un ancho mínimo de 300px */
-    gap: 20px; /* Espacio entre las tarjetas */
-    justify-items: center; /* Centrar horizontalmente las tarjetas */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Mostrar tantas tarjetas como sea posible en una fila, cada una con un ancho mínimo de 300px */
+  gap: 20px; /* Espacio entre las tarjetas */
+  justify-items: center; /* Centrar horizontalmente las tarjetas */
 }
 
 /* Estilos para la tarjeta de participante */
 .participante {
-    width: 100%; /* Ocupar todo el ancho del contenedor */
-    max-width: 400px; /* Ancho máximo para controlar el tamaño máximo de la tarjeta */
-    border-radius: 20px;
-    background: #f5f5f5;
-    position: relative;
-    border: 2px solid white;
-    transition: 0.5s ease-out;
-    overflow: hidden;
+  width: 100%; /* Ocupar todo el ancho del contenedor */
+  max-width: 400px; /* Ancho máximo para controlar el tamaño máximo de la tarjeta */
+  border-radius: 20px;
+  background: #f5f5f5;
+  position: relative;
+  border: 2px solid white;
+  transition: 0.5s ease-out;
+  overflow: hidden;
 }
 .participante:hover {
-    transform: scale(1.1); /* Escala la tarjeta al 110% cuando el mouse pasa por encima */
+  transform: scale(1.1); /* Escala la tarjeta al 110% cuando el mouse pasa por encima */
 }
 
 .participante img {
-    object-fit: cover;
-    width: 100%;
-    height: 300px;
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
 }
 
 
 #navegacion {
-    position: fixed;
-    width: 100%;
-    z-index: 6666;
-    font-family: "montserrat", sans-serif;
+  position: fixed;
+  width: 100%;
+  z-index: 6666;
+  font-family: "montserrat", sans-serif;
 }
 
 #menu ul li a {
-    text-decoration: none;
-    color: black;
-    margin: 0 12px;
-    transition: 0.5s;
-    font-weight: bold;
+  text-decoration: none;
+  color: black;
+  margin: 0 12px;
+  transition: 0.5s;
+  font-weight: bold;
 }
 
 #menu ul li a:hover {
-    color: blueviolet;
+  color: blueviolet;
 }
 
 #redes a {
-    color: black;
-    font-size: 30px;
-    margin: 0 10px;
+  color: black;
+  font-size: 30px;
+  margin: 0 10px;
 }
 
 #redes ul li a:hover {
-    color: blueviolet;
+  color: blueviolet;
 }
 
 #sesion button {
-    color: white;
-    font-size: 20px;
+  color: white;
+  font-size: 20px;
 }
 
 #sesion button:hover {
-    color: blueviolet;
+  color: blueviolet;
 }
 
 
-/* Estilos del formulario de inicio de sesión */
-form .formulario {
-    position: relative;
-    border-bottom: 2px solid #adadad;
-    margin: 50px 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
 
-.formulario input {
-    width: 140%;
-    padding: 0 15px;
-    height: 50px;
-    font-size: 20px;
-    border: none;
-    background: none;
-    outline: none;
-}
 
-.formulario label {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    font-size: 22px;
-    transition: .5s;
-    pointer-events: none;
-}
 
-.pass {
-    font-size: 0.8rem;
-    margin: 30px 0 20px 5px;
-    cursor: pointer;
-}
 
-.pass:hover {
-    text-decoration: underline;
-}
 
 #btn-login {
-    width: 100%;
-    height: 50px;
-    cursor: pointer;
-    outline: none;
+  width: 100%;
+  height: 50px;
+  cursor: pointer;
+  outline: none;
 }
 
 footer {
-    width: 100%;
-    background-color: #322BAA;
-    color: #A0AEC0;
-    padding: 6px 2px 2px 2px;
-    font-size: medium;
+  width: 100%;
+  background-color: #322BAA;
+  color: #A0AEC0;
+  padding: 6px 2px 2px 2px;
+  font-size: medium;
 }
 
 footer p {
-    text-align: center;
-    font-family: "montserrat", sans-serif;
+  text-align: center;
+  font-family: "montserrat", sans-serif;
 }
 
 .container_footer {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .iconos_footer {
-    width: 60%;
-    padding-left: 70px;
+  width: 60%;
+  padding-left: 70px;
 }
 
 .iconos_footer img {
-    width: 45px;
-    height: 45px;
-    padding: 5px;
+  width: 45px;
+  height: 45px;
+  padding: 5px;
 }
 
 .iconos_footer img:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .terminos_privacidad {
-    width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    font-family: "montserrat", sans-serif;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-family: "montserrat", sans-serif;
 }
 
 .terminos_privacidad a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 button {
-    cursor: pointer;
-    font-weight: 700;
-    font-family: Helvetica,"sans-serif";
-    transition: all .2s;
-    padding: 10px 20px;
-    border-radius: 100px;
-    background: white;
-    border: 1px solid transparent;
-    display: block;
-    align-items:center;
-    font-size: 15px;
-    margin:0 auto;
-  }
+  cursor: pointer;
+  font-weight: 700;
+  font-family: Helvetica,"sans-serif";
+  transition: all .2s;
+  padding: 10px 20px;
+  border-radius: 100px;
+  background: white;
+  border: 1px solid transparent;
+  display: block;
+  align-items:center;
+  font-size: 15px;
+  margin:0 auto;
+}
+
+button:hover {
+  background: lightgray;
+}
+
+button > svg {
+  width: 34px;
+  margin-left: 10px;
+  transition: transform .3s ease-in-out;
+}
+
+button:hover svg {
+  transform: translateX(5px);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  background-color: white;
+  color: var(--color-light);
+  letter-spacing: .05rem;
+}
+
+
+
+/*estilos del modal*/
+.container{
+  height: 300px;
+  width: 90px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 30px rgba(0, 0, 0, .2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 5px;
+  background-color: rgba(0, 110, 255, 0.041);
+}
+
+.header {
+  flex: 1;
+  width: 100%;
+  border: 2px dashed royalblue;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header svg {
+  height: 100px;
+}
+
+.header p {
+  text-align: center;
+  color: black;
+}
+
+.footer {
+  background-color: rgba(0, 110, 255, 0.075);
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: black;
+  border: none;
+}
+
+.footer svg {
+  height: 130%;
+  fill: royalblue;
+  background-color: rgba(70, 66, 66, 0.103);
+  border-radius: 50%;
+  padding: 2px;
+  cursor: pointer;
+  box-shadow: 0 2px 30px rgba(0, 0, 0, 0.205);
+}
+
+.footer p {
+  flex: 1;
+  text-align: center;
+}
+
+#file {
+  display: none;
   
-  button:hover {
-    background: lightgray;
-  }
-  
-  button > svg {
-    width: 34px;
-    margin-left: 10px;
-    transition: transform .3s ease-in-out;
-  }
-  
-  button:hover svg {
-    transform: translateX(5px);
-  }
-  
-  button:active {
-    transform: scale(0.95);
-  }
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.1rem;
-    font-weight: 300;
-    background-color: white;
-    color: var(--color-light);
-    letter-spacing: .05rem;
-  }
-  
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: auto;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 100px 100px 80px rgba(0, 0, 0, 0.03);
+  font-family: Helvetica, "sans-serif";
+}
+
+.title {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 4px;
+  font-family: Helvetica, "sans-serif";
+}
+
+.sub {
+  text-align: center;
+  color: black;
+  font-size: 14px;
+  width: 100%;
+  font-family: Helvetica, "sans-serif";
+}
+
+.sub.mb {
+  margin-bottom: 1px;
+  font-family: Helvetica, "sans-serif";
+}
+
+.sub a {
+  color: rgb(23, 111, 211);
+  font-family: Helvetica, "sans-serif";
+}
+
+
+
+.form .modal-button {
+  align-self: flex-end;
+  font-family: Helvetica, "sans-serif";
+}
+
+.input, .modal-button {
+  border: none;
+  outline: none;
+  padding: 16px 10px;
+  background-color: rgb(247, 243, 243);
+  border-radius: 10px;
+  box-shadow: 12.5px 12.5px 10px rgba(0, 0, 0, 0.015),100px 100px 80px rgba(0, 0, 0, 0.03);
+}
+
+.modal-button{
+  width: 90%;
+}
+.modal-button {
+  margin-top: 12px;
+  background-color: rgb(23, 111, 211);
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.input:focus {
+  border: 1px solid rgb(23, 111, 211);
+}
+
+#file-modal {
+  display: none;
+}
+
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; 
+  padding:0%;
+}
+
+#back-button,
+#continue-button {
+  background-color: white; /* Color de fondo para los botones (puedes cambiarlo según tus preferencias) */
+  color: rgb(0, 0, 0);
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+
+#back-button svg {
+  transform: rotate(180deg);
+}

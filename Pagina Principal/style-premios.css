@@ -1,0 +1,164 @@
+.card {
+    width: 400px;
+    background: white;
+    padding: .4em;
+    border-radius: 6px;
+
+
+  }
+  .container{
+    display: flex; 
+    justify-content: center;
+    margin: 10%;
+  }
+
+  body{
+    background-image: url("https://pbs.twimg.com/ext_tw_video_thumb/1552593849805164547/pu/img/nwjQY4hnSCykgjJL.jpg:large");
+  }
+
+
+  h1{
+    text-align: center;
+    
+
+  }
+  h4{
+    text-align: center;
+    font-weight: bolder;
+    
+  }
+  
+  .card-image {
+    background-color: white;
+    width: 100%;
+    height: 130px;
+    border-radius: 6px 6px 0 0;
+    display: flex;
+    justify-content: center;
+  }
+  #img1, #img2, #img3{
+    width: 120px;
+    height: 150px;
+  }
+  
+  .card-image:hover {
+    transform: scale(0.98);
+  }
+  
+  .category {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: blueviolet;
+    padding: 10px 7px 0;
+  }
+  
+
+  
+  .heading {
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+    padding: 7px;
+  }
+  
+
+  
+  .author {
+    color: gray;
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 20px;
+  }
+  
+  .name {
+    font-weight: 600;
+  }
+  
+  .name:hover {
+    cursor: pointer;
+  }
+
+  #navegacion {
+    width: 100%;
+    z-index: 6666;
+    font-family: "montserrat", sans-serif;
+    background-color: #ffa751;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: black;
+    margin: 0 12px;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+#menu ul li a:hover {
+    color: blueviolet;
+}
+
+#redes a {
+    color: black;
+    font-size: 30px;
+    margin: 0 10px;
+}
+
+#redes ul li a:hover {
+    color: blueviolet;
+}
+
+#sesion button {
+    color: black;
+    font-size: 20px;
+}
+
+#sesion button:hover {
+    color: blueviolet;
+}
+
+/*Footer*/
+footer {
+  width: 100%;
+  background-color: #322BAA;
+  color: #A0AEC0;
+  padding: 6px 2px 2px 2px;
+  font-size: medium;
+}
+
+footer p {
+  text-align: center;
+  font-family: "montserrat", sans-serif;
+}
+
+.container_footer {
+  display: flex;
+  flex-direction: row;
+}
+
+.iconos_footer {
+  width: 60%;
+  padding-left: 70px;
+}
+
+.iconos_footer img {
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+}
+
+.iconos_footer img:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.terminos_privacidad {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-family: "montserrat", sans-serif;
+}
+
+.terminos_privacidad a {
+  text-decoration: none;
+}

@@ -11,8 +11,8 @@ body {
     background-color: var(--color-grey);
     color: var(--color-light);
     letter-spacing: .05rem;
-}
 
+}
 
 .p-6 {
     padding: 4rem 3rem;
@@ -53,7 +53,7 @@ body {
     min-height: 100vh;
 }
 
-.testiomonial {
+.testimonial {
     bottom: 10px
 }
 
@@ -90,3 +90,93 @@ body {
         width: 100%;
     }
 }
+
+
+
+
+/* navbar and footer */
+#navegacion {
+    position: fixed;
+    width: 100%;
+    z-index: 6666;
+    font-family: "montserrat", sans-serif;
+  }
+  
+  #menu ul li a {
+    text-decoration: none;
+    color: black;
+    margin: 0 12px;
+    transition: 0.5s;
+    font-weight: bold;
+  }
+  
+  #menu ul li a:hover {
+    color: blueviolet;
+  }
+  
+  #redes a {
+    color: black;
+    font-size: 30px;
+    margin: 0 10px;
+  }
+  
+  #redes ul li a:hover {
+    color: blueviolet;
+  }
+  
+  #sesion button {
+    color: white;
+    font-size: 20px;
+  }
+  
+  #sesion button:hover {
+    color: blueviolet;
+  }
+
+  footer {
+    width: 100%;
+    background-color: #322BAA;
+    color: #A0AEC0;
+    padding: 6px 2px 2px 2px;
+    font-size: medium;
+  }
+  
+  footer p {
+    text-align: center;
+    font-family: "montserrat", sans-serif;
+  }
+  
+  .container_footer {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .iconos_footer {
+    width: 60%;
+    padding-left: 70px;
+  }
+  
+  .iconos_footer img {
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+  }
+  
+  .iconos_footer img:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .terminos_privacidad {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    font-family: "montserrat", sans-serif;
+  }
+  
+  .terminos_privacidad a {
+    text-decoration: none;
+  }
+
+  

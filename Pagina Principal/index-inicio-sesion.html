@@ -1,136 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+
+<head>
+    
+    <title>Art Snap - Inicio de sesión</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-   
+
 
     <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500;1,800&family=Roboto:wght@900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+</head>
     <link href="styles-inicio-sesion.css" rel="stylesheet" />
+
     
-    <title>Inicio de sesión</title>
+
+  
+    <body>
 
 
-  </head>
-  <body>
-       <!-- HEADER - NAVBAR -->
-     <header id="navegacion">
-      <nav class="navbar navbar-white bg-white navbar-expand-lg">
-          <div class="container-fluid">
-              <!-- Logo -->
-              <a href="index.html"><img src="./Imagenes/Logo.png" alt="logo"></a>
 
-              <!-- Icono Menu -->
-              <button class="navbar-toggler" id="buttonresponsive" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false"
-                  aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
 
-              <!-- Menú de navegación -->
-              <div class="collapse navbar-collapse" id="menu">
-                  <ul class="navbar-nav me-auto">
-                      <li class="navbar-item">
-                          <a href="index.html" class="nav-link active">Acerca de nosotros</a>
-                      </li>
-                      <li class="navbar-item">
-                          <a href="index.html" class="nav-link">Patrocinantes</a>
-                      </li>
-                      <li class="navbar-item">
-                          <a href="#" class="nav-link">Premios</a>
-                      </li>
-                      <li class="navbar-item">
-                          <a href="index-contacto.html" class="nav-link">Contacto</a>
-                      </li>
-                  </ul>
-
-                  <!-- Botones de inicio de sesión -->
-                  <ul class="navbar-nav flex-row flex-wrap text-light" id="sesion">
-                      <li class="navbar-item col-6 col-md-auto p-3">
-                          <button id="loginBtn" type="button" class="btn btn-dark" data-bs-toggle="modal"
-                              data-bs-target="#loginModal">
-                              <i class="bi bi-person-fill-lock"></i>
-                          </button>
-                          <small class="d-md-none ms-2">Iniciar Sesión</small>
-                      </li>
-                      <li class="navbar-item col-6 col-md-auto p-3">
-                          <button id="cerrar-sesion" type="button" class="btn btn-dark">
-                              <i class="bi bi-box-arrow-in-right"></i>
-                          </button>
-                          <small class="d-md-none ms-2">Cerrar Sesión</small>
-                      </li>
-                  </ul>
-              </div>
-          </div>
-      </nav>
-  </header>
-  <br>
+        <header id="navegacion">
+            <nav class="navbar navbar-white bg-white navbar-expand-lg">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a href="index.html"><img src="./Imagenes/Logo.png" alt="logo"></a>
     
-    <section class="contact-box">
-      <div class="row no-gutters bg-white">
-        <div class="col-xl-6 col-lg-12 d-flex">
-          <div class="container align-self-center p-6">
-            <h1 class="font-weight-bold mb-5 text-center"> Inicia sesión!</h1>
-            <form>
-              <div class="form-group mb-3">
-                <label class="font-weight-bold"
-                  >Correo electrónico <span class="text-danger">*</span></label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  placeholder="Ingresa tu correo electrónico"
-                />
-              </div>
-              <div class="form-group mb-3">
-                <label class="font-weight-bold"
-                  >Contraseña <span class="text-danger">*</span></label
-                >
-                <input
-                  type="password"
-                  class="form-control"
-                  placeholder="Ingresa una contraseña"
-                />
-              </div>
-              <div class="form-group mb-5 text-center">
-                    <a href="index-nuevo-registro.html">Crea una cuenta</a> 
-                    
-                    <br>
-                    <a href="index-recuperar-contrasena.html">Olvidaste tu clave?</a> 
-                    
-              </div>
-              <div class="col text-center">
-              <a class="btn btn-primary" href="index-perfil.html">Iniciar sesión</a>  
-             
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="col-xl-6 col-lg-12 register-bg">
-          <div class="position-relative testiomonial p-4"></div>
-        </div>
-      </div>
-    </section>
+                    <!-- Icono Menu -->
+                    <button class="navbar-toggler" id="buttonresponsive" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#menu" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <!-- Menú de navegación -->
+                    <div class="collapse navbar-collapse" id="menu">
+                        <ul class="navbar-nav me-auto">
+                            <li class="navbar-item">
+                                <a href="index.html" class="nav-link active">Acerca de nosotros</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="index.html#patrocinadores" class="nav-link">Patrocinantes</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="index-premios.html" class="nav-link">Premios</a>
+                            </li>
+                            <li class="navbar-item">
+                                <a href="index-contacto.html" class="nav-link">Contacto</a>
+                            </li>
+                        </ul>
+    
+                        <!-- Botones de inicio de sesión -->
+                        
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+
+
+
+
+        <section class="contact-box">
+            <div class="row no-gutters bg-white">
+                <div class="col-xl-6 col-lg-12 d-flex">
+                    <div class="container align-self-center p-6">
+                        <h1 class="font-weight-bold mb-5 text-center"> Inicia sesión!</h1>
+                        <form>
+                            <div class="form-group mb-3">
+                                <label for="correo" class="font-weight-bold">Correo electrónico <span
+                                        class="text-danger">*</span></label>
+                                <input type="email" id="correo" class="form-control"
+                                    placeholder="Ingresa tu correo electrónico" />
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="contrasena" class="font-weight-bold">Contraseña <span
+                                        class="text-danger">*</span></label>
+                                <input type="password" id="contrasena" class="form-control"
+                                    placeholder="Ingresa una contraseña" />
+                            </div>
+    
+    
+    
+                            <div class="form-group mb-5 text-center">
+                                <a href="index-nuevo-registro.html">Crea una cuenta</a><br>
+                                <a href="index-recuperar-contrasena.html">Olvidaste tu clave?</a>
+                            </div>
+                            <div class="col text-center">
+                                <a class="btn btn-primary" href="index-galeria.html">Iniciar sesión</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-lg-12 register-bg">
+                    <div class="position-relative testimonial p-4"></div>
+                </div>
+            </div>
+        </section>
+    </body>
 
     <script src="script-contacto.js"></script>   
-  </body>
+
+
+  
+
+
+
+
+  <footer>
+    <div class="container_footer">
+        <div class="iconos_footer">
+            <a href="#" target="_blank"><img src="./Imagenes/Instagram.png" alt="icono_Instagram"></a>
+            <a href="#" target="_blank"><img src="./Imagenes/Youtube.png" alt="icono_Youtube"></a>
+            <a href="#" target="_blank"><img src="./Imagenes/Twitter.png" alt="icono_Twitter"></a>
+            <a href="#" target="_blank"><img src="./Imagenes/Facebook.png" alt="icono_Facebook"></a>
+            <a href="#" target="_blank"><img src="./Imagenes/Linkedin.png" alt="icono_Linkedin"></a>
+        </div>
+        <div class="terminos_privacidad">
+            <a href="index-privacidad.html" target="_blank">Términos de servicio</a>
+          
+        </div>
+    </div>
+    <p>&copy; 2023 ArtSnap, Inc. Todos los derechos reservados.</p>
+
+</footer>
+
+
+
+</body>
 </html>
+
